@@ -1,0 +1,44 @@
+<h1>Editing cms_page</h1>
+
+<% form_for(@cms_page) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :sub_title %><br />
+    <%= f.text_field :sub_title %>
+  </p>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.label :meta_keyword %><br />
+    <%= f.text_area :meta_keyword %>
+  </p>
+  <p>
+    <%= f.label :meta_description %><br />
+    <%= f.text_area :meta_description %>
+  </p>
+  <p>
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </p>
+  <p>
+    <%= f.label :parent_id %><br />
+    <%= f.text_field :parent_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @cms_page %> |
+<%= link_to 'Back', cms_pages_path %>

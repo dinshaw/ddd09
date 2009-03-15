@@ -1,0 +1,34 @@
+<h1>Listing cms_pages</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Title</th>
+    <th>Sub title</th>
+    <th>Body</th>
+    <th>Meta keyword</th>
+    <th>Meta description</th>
+    <th>Position</th>
+    <th>Parent</th>
+  </tr>
+
+<% @cms_pages.each do |cms_page| %>
+  <tr>
+    <td><%=h cms_page.name %></td>
+    <td><%=h cms_page.title %></td>
+    <td><%=h cms_page.sub_title %></td>
+    <td><%=h cms_page.body %></td>
+    <td><%=h cms_page.meta_keyword %></td>
+    <td><%=h cms_page.meta_description %></td>
+    <td><%=h cms_page.position %></td>
+    <td><%=h cms_page.parent_id %></td>
+    <td><%= link_to 'Show', cms_page %></td>
+    <td><%= link_to 'Edit', edit_cms_page_path(cms_page) %></td>
+    <td><%= link_to 'Destroy', cms_page, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New cms_page', new_cms_page_path %>

@@ -79,3 +79,50 @@ Migrating to AddOpenIdAuthenticationTables (20090315040925)
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_tags_on_name')[0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_login')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090315040906)
+Migrating to CreateRoles (20090315040910)
+Migrating to CreateSessions (20090315040917)
+Migrating to AddActsAsTaggableTables (20090315040921)
+Migrating to AddOpenIdAuthenticationTables (20090315040925)
+Migrating to CreateAdminCmsPages (20090315042403)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (5.7ms)[0m   [0mCREATE TABLE "admin_cms_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "title" varchar(255), "sub_title" varchar(255), "body" text, "meta_keyword" text, "meta_description" text, "position" integer, "parent_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090315042403')[0m
+Migrating to CreateAdminConfigValues (20090315042411)
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE "admin_config_values" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "value" varchar(255), "sys_var" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090315042411')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("admin_cms_pages")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("admin_config_values")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("open_id_authentication_associations")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("open_id_authentication_nonces")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("roles_users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_roles_users_on_user_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_roles_users_on_role_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_user_id_and_taggable_id_and_taggable_type')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_user_id_and_tag_id_and_taggable_type')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_tag_id_and_taggable_type')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_tags_on_taggings_count')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_tags_on_name')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_login')[0m

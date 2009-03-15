@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.root :controller => 'cms_page', :action => 'home'
+
+  map.resources :config_values
+
+  map.resources :cms_pages
+
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'

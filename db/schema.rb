@@ -9,7 +9,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090315040925) do
+ActiveRecord::Schema.define(:version => 20090315042411) do
+
+  create_table "admin_cms_pages", :force => true do |t|
+    t.string   "name"
+    t.string   "title"
+    t.string   "sub_title"
+    t.text     "body"
+    t.text     "meta_keyword"
+    t.text     "meta_description"
+    t.integer  "position"
+    t.integer  "parent_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "admin_config_values", :force => true do |t|
+    t.string   "name"
+    t.string   "value"
+    t.boolean  "sys_var"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "open_id_authentication_associations", :force => true do |t|
     t.integer "issued"
