@@ -1,0 +1,39 @@
+[submodule "vendor/plugins/rspec"]
+	path = vendor/plugins/rspec
+	url = git://github.com/dchelimsky/rspec.git
+[submodule "vendor/plugins/rspec-rails"]
+	path = vendor/plugins/rspec-rails
+	url = git://github.com/dchelimsky/rspec-rails.git
+[submodule "vendor/plugins/asset_packager"]
+	path = vendor/plugins/asset_packager
+	url = git://github.com/sbecker/asset_packager.git
+[submodule "vendor/plugins/exception_notifier"]
+	path = vendor/plugins/exception_notifier
+	url = git://github.com/rails/exception_notification.git
+[submodule "vendor/plugins/open_id_authentication"]
+	path = vendor/plugins/open_id_authentication
+	url = git://github.com/rails/open_id_authentication.git
+[submodule "vendor/plugins/restful-authentication"]
+	path = vendor/plugins/restful-authentication
+	url = git://github.com/technoweenie/restful-authentication.git
+[submodule "vendor/plugins/role_requirement"]
+	path = vendor/plugins/role_requirement
+	url = git://github.com/timcharper/role_requirement.git
+[submodule "vendor/plugins/acts_as_taggable_redux"]
+	path = vendor/plugins/acts_as_taggable_redux
+	url = git://github.com/geemus/acts_as_taggable_redux.git
+[submodule "vendor/plugins/acts_as_ordered_tree"]
+	path = vendor/plugins/acts_as_ordered_tree
+	url = git://github.com/ffmike/acts_as_ordered_tree.git
+[submodule "vendor/plugins/paperclip"]
+	path = vendor/plugins/paperclip
+	url = git://github.com/thoughtbot/paperclip.git
+[submodule "vendor/plugins/simple_auto_complete"]
+	path = vendor/plugins/simple_auto_complete
+	url = git://github.com/grosser/simple_auto_complete.git
+[submodule "vendor/plugins/custom-err-msg"]
+	path = vendor/plugins/custom-err-msg
+	url = git://github.com/gumayunov/custom-err-msg.git
+[submodule "vendor/plugins/thinking-sphinx"]
+	path = vendor/plugins/thinking-sphinx
+	url = git://github.com/freelancing-god/thinking-sphinx.git
