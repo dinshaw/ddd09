@@ -1,0 +1,38 @@
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-03-15 19:58:31) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+Rendering template within layouts/main
+Rendering cms_pages/home
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-03-15 19:58:31) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+Rendering stylesheets/content
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing StylesheetsController#errors to css (for 127.0.0.1 at 2009-03-15 19:58:31) [GET]
+  Parameters: {"format"=>"css", "action"=>"errors", "controller"=>"stylesheets"}
+
+ActionController::UnknownAction (No action responded to errors. Actions: access_denied, admin, check_roles, content, do_colors, forms, layout, lists, maintenance, nav, public, reset, role_requirements, role_requirements=, tables, and typography):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-15 19:58:38) [GET]
+
+ActionController::RoutingError (No route matches "/asd" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-15 20:03:14) [GET]
+
+ActionController::RoutingError (No route matches "/asd" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

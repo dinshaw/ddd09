@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>untitled</title>
+	<%= javascript_include_tag 'jquery', 'jquery.autocomplete', 'application' %>
+	<%= stylesheet_link_tag 'layout', 'reset', 'typography', 'content', 'nav', 'errors', 'tables', 'forms', 'autocomplete' %>
+</head>
+
+<body>
+	<div id="container">
+		<div id="canvas">
+			<div id="nav-main">
+				<ul>
+					<li><%= link_to "methodology"%></li>
+					<li><%= link_to "projects"%></li>
+					<li><%= link_to "clients"%></li>
+					<li><%= link_to "railsnstuf.com"%></li>
+					<li><%= link_to "pcgi.it"%></li>
+					<li class="last"><%= link_to "contact"%></li>
+				</ul>
+			</div> <!-- nav-main -->
+
+			<br class="clear" />
+			<br class="clear" />
+			
+				<h1>Admin Area</h1>
+				<div id="nav-admin">
+					<ul>
+						<li><%= link_to "CMS Pages", admin_cms_pages_path %></li>
+						<li><%= link_to "Projects"%></li>
+						<li><%= link_to "Clients"%></li>
+						<li><%= link_to "Config Values"%></li>
+						<li><%= link_to "Users"%></li>
+					</ul>
+				</div> <!-- nav-admin -->
+
+				<br class="clear" />
+				<br class="clear" />				
+
+			<div id="content-admin">
+				<div id="content-main-spacer">
+					<%= flash_block %>
+					<%= yield %>
+				</div>
+			</div> <!-- content-main -->
+
+		</div> <!-- canvas -->
+	</div> <!-- container -->
+</body>
+</html>

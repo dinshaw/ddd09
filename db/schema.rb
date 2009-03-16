@@ -11,8 +11,8 @@
 
 ActiveRecord::Schema.define(:version => 20090315042411) do
 
-  create_table "admin_cms_pages", :force => true do |t|
-    t.string   "name"
+  create_table "cms_pages", :force => true do |t|
+    t.string   "reference_string"
     t.string   "title"
     t.string   "sub_title"
     t.text     "body"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(:version => 20090315042411) do
     t.datetime "updated_at"
   end
 
-  create_table "admin_config_values", :force => true do |t|
+  create_table "config_values", :force => true do |t|
     t.string   "name"
     t.string   "value"
     t.boolean  "sys_var"

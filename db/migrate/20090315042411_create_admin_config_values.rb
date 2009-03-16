@@ -1,6 +1,6 @@
 class CreateAdminConfigValues < ActiveRecord::Migration
   def self.up
-    create_table :admin_config_values do |t|
+    create_table :config_values do |t|
       t.string :name
       t.string :value
       t.boolean :sys_var
@@ -10,6 +10,6 @@ class CreateAdminConfigValues < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :admin_config_values
+    drop_table :config_values
   end
 end

@@ -1,0 +1,22 @@
+label{
+	display:block;
+	margin-bottom:3px;
+	color:#cccccc;
+	font-weight:bold;
+}
+input, textarea{
+	border:1px solid #8facce;
+	padding:6px 8px;
+	margin-bottom:20px;
+	font:1em helvetica, sans-serif;
+	color:;
+}
+
+textarea.large{
+	width:800px;
+	height:300px;
+}
+textarea.small{
+	width:500px;
+	height:100px;
+}

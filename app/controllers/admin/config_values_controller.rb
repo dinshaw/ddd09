@@ -1,4 +1,4 @@
-class Admin::ConfigValuesController < ApplicationController
+class Admin::ConfigValuesController < AdminController
   # GET /admin_config_values
   # GET /admin_config_values.xml
   def index

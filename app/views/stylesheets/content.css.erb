@@ -1,0 +1,43 @@
+#content-main p{
+	letter-spacing:0.03em;
+	text-indent:1em;
+}
+#content-main p.no-indent{
+	text-indent:0;
+}
+
+.left{
+	float:left;
+	margin-right:5px;
+}
+.clear{
+	clear:both;
+}
+
+#branding{
+	position:relative;
+	clear:both;
+	height:170px;
+	padding-top:5px;
+	margin-bottom:15px;
+}
+
+#branding #contact-info{
+	position:absolute;
+	right:0%;
+	top:50%;
+	height:4.5em;
+	margin-top:-2.25em;
+}
+
+#tag-list{
+	text-align:right;
+}
+
+.errors{
+	margin-bottom:15px;
+}
+
+.errors ul li{
+	color:<%= @error %>;
+}

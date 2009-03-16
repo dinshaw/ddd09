@@ -47,9 +47,10 @@
 			<div id="content-main">
 				<div id="content-main-spacer">
 
-					<h1>404 Page not found error!</h1>
-					<p>Stop messing around with the url. Just use the links.</p>
-					<p>(if you were using the links then please accept my appology on behalf of my website)</p>
+					<h1>Maintenance Notice</h1>
+					<h2>We're currently offline for <%= reason ? reason : "maintenance" %> as of <%= Time.now.strftime("%I:%M %p %Z") %>.</h2>
+					<p class="no-indent">Sorry for the inconvenience. We'll be back <%= deadline ? "by #{deadline}" : "in 5 min" %>.</p>
+					<p class="no-indent">Please e-mail or call (address above) it if you need to get in touch.</p>
 
 				</div>
 			</div> <!-- content-main -->

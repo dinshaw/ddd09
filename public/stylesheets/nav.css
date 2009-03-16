@@ -1,0 +1,19 @@
+#nav-main ul li{
+	float:left;
+	margin:0 60px 0 0;
+}
+#nav-main ul li.last{
+	margin:0;
+}
+
+#nav-main ul li a{
+	text-decoration:none;
+	letter-spacing:1px;
+	font-size:1.2em;
+}
+
+/* Admin Nav */
+#nav-admin ul li{
+	float:left;
+	margin:0 20px 0 0;
+}

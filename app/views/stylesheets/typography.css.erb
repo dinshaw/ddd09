@@ -1,0 +1,57 @@
+/* = Typography
+default font_size / line_height
+-----------------------------------------------------------------------------*/
+body {
+    font:100% helvetica, arial, sans-serif;
+	line-height:1.5em;	
+	color:<%= @text_main %>;
+}
+
+#contact-info, #site-info{
+	font-family:courier, mono-space;
+	color:#000;
+}
+
+#site-info{
+	font-size:0.775em;
+}
+
+/* =Links */
+a{
+	color:<%= @link_blue %>;
+	text-decoration:none;
+}
+a:hover{
+	border-bottom:1px solid <%= @link_blue %>;
+}
+
+
+/* =Headers */
+h1{
+	font-size:1.7em;
+	line-height:1em;
+	font-weight:normal;
+	color:<%= @title %>;
+	margin:0 0 10px 0;
+}
+h2{
+	font-size:1.2em;
+	line-height:1em;
+	letter-spacing:0.05em;	
+	font-weight:normal;
+	font-style:italic;
+	color:<%= @med_grey %>;
+	margin:0 0 10px 0;
+}
+h4{
+	font-family:courier;
+	font-weight:normal;
+	font-size:2em;
+	margin-bottom:15px;
+	color:<%= @med_grey %>;
+}
+
+/* =Lists */
+#tag-list li{
+	font-size:1em;
+}

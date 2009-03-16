@@ -1,0 +1,37 @@
+html, body {
+	height: 100%;
+	text-align:center;
+}
+
+html>body #container {
+	height: auto;
+	width: 900px;
+	margin:auto;
+	text-align:left;	
+}
+
+#canvas{
+	margin:20px;
+}
+
+#content-main{
+	float:left;
+	width:640px;
+	border:1px solid #cccccc;
+	border-width:0 1px 0 0;
+	margin-bottom:30px;
+}
+
+#content-main-spacer{
+	margin-right:30px;
+}
+
+#side-bar{
+	float:right;
+	margin-bottom:30px;	
+}
+
+#site-info {
+	clear:both;
+	margin-bottom:30px;	
+}

@@ -1,12 +1,12 @@
-class Admin::CmsPagesController < ApplicationController
+class Admin::CmsPagesController < AdminController
   # GET /admin_cms_pages
   # GET /admin_cms_pages.xml
   def index
-    @admin_cms_pages = Admin::CmsPage.all
+    @cms_pages = Admin::CmsPage.all
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @admin_cms_pages }
+      format.xml  { render :xml => @cms_pages }
     end
   end
 
@@ -44,7 +44,7 @@ class Admin::CmsPagesController < ApplicationController
 
     respond_to do |format|
       if @cms_page.save
-        flash[:notice] = 'Admin::CmsPage was successfully created.'
+        flash[:notice] = 'CMS Page was successfully created.'
         format.html { redirect_to(@cms_page) }
         format.xml  { render :xml => @cms_page, :status => :created, :location => @cms_page }
       else

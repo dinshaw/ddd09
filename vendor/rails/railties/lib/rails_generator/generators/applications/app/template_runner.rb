@@ -121,6 +121,8 @@ module Rails
     
         # Adds an include line to the ApplicationController
         def application_include(data)
+          log 'application_include', data
+          
           sentinel = 'class ApplicationController < ActionController::Base'
           in_root do
             gsub_file 'app/controllers/application_controller.rb', /(#{Regexp.escape(sentinel)})/mi do |match|
@@ -133,6 +135,8 @@ module Rails
         # appends the supplied string
         # adds '_observer' if it is not given
         def add_observer(name)
+          log 'add_observer', name
+          
           name += "_observer" if !name.match("_observer")
           in_root do
             # do this one first so it never does both

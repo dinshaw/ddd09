@@ -1,0 +1,265 @@
+Script started on Sun Mar 15 20:01:18 2009
+dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migrate:redodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migrate:redodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migrate[Kdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migratedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migrate:redodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migrate:redodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ [Kdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ sdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ sdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scrdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scrdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scridinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scridinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scriptdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scriptdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/sdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/sdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/sedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/sedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/serdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/serdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server hdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server hdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server htdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server htdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server htrdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server htrdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server htrldinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server htrldinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server htr[Kdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server htrdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server ht[Kdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server htdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server h[Kdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server hdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server hedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server hedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server heldinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server heldinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server helpdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server help
+=> Booting Mongrel
+=> Rails 2.3.1 application starting on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+^CExiting
+dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server helpdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server helpdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migrate:redodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migrate:redodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migrate[Kdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migratedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:rollbackdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:rollbackdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:rollbackdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:[1Pmigratedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migratedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ cd sites/ddd/ddd09/dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ cd sites/ddd/ddd09/dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake rails:template LOCATION=/Users/dinshaw/sites/ror-templates/ddd-defaults.rbdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake rails:template LOCATION=/Users/dinshaw/sites/ror-templates/ddd-defaults.rbdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake rails:template LOCATION=/Users/dinshaw/sites/ror-templates/ddd-defaults.rbdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake rails:template LOCATION=/Users/dinshaw/sites/ror-templates/ddd-defaults.rbdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ cd sites/ddd/ddd09/[Kdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ cd sites/ddd/ddd09/dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ [4Prake db:migratedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migratedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:rollbackdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:rollbackdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:rollbackdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:[1Pmigratedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migratedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migrate:redodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migrate:redodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migrate:[Kdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:migrate:dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:[Kdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake db:dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake [Kdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ rake dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ [Kdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ sdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ sdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scrdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scrdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scridinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scridinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scriptdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ scriptdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/sdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/sdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/sedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/sedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/serdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/serdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -edinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -edinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -endinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -endinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envidinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envidinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envirdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envirdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envirodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envirodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmendinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmendinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmentdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmentdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=pdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=pdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=prdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=prdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=prodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=prodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=proddinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=proddinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=produdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=produdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=producdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=producdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=productdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=productdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=productidinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=productidinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=productiodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=productiodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=productiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=production
+=> Booting Mongrel
+=> Rails 2.3.1 application starting on http://0.0.0.0:3000
+./script/../config/../vendor/rails/railties/lib/initializer.rb:363:in `read': No such file or directory - /Users/dinshaw/sites/ddd/ddd09/config/environments/nvironment=production.rb (Errno::ENOENT)
+	from ./script/../config/../vendor/rails/railties/lib/initializer.rb:363:in `load_environment'
+	from /Users/dinshaw/sites/ddd/ddd09/vendor/rails/activesupport/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+	from ./script/../config/../vendor/rails/railties/lib/initializer.rb:356:in `load_environment'
+	from ./script/../config/../vendor/rails/railties/lib/initializer.rb:137:in `process'
+	from ./script/../config/../vendor/rails/railties/lib/initializer.rb:113:in `send'
+	from ./script/../config/../vendor/rails/railties/lib/initializer.rb:113:in `run'
+	from /Users/dinshaw/sites/ddd/ddd09/config/environment.rb:9
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/dinshaw/sites/ddd/ddd09/vendor/rails/activesupport/lib/active_support/dependencies.rb:156:in `require'
+	from /Users/dinshaw/sites/ddd/ddd09/vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+	from /Users/dinshaw/sites/ddd/ddd09/vendor/rails/activesupport/lib/active_support/dependencies.rb:156:in `require'
+	from /Users/dinshaw/sites/ddd/ddd09/vendor/rails/railties/lib/commands/server.rb:84
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from script/server:3
+dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=productiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=productiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=productiodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=productidinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=productdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=producdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=produdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=proddinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=prodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=prdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=pdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment=dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment[1Pproductiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmentdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment productiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment 
+=> Booting Mongrel
+=> Rails 2.3.1 application starting on http://0.0.0.0:3000
+./script/../config/../vendor/rails/railties/lib/initializer.rb:363:in `read': No such file or directory - /Users/dinshaw/sites/ddd/ddd09/config/environments/nvironment.rb (Errno::ENOENT)
+	from ./script/../config/../vendor/rails/railties/lib/initializer.rb:363:in `load_environment'
+	from /Users/dinshaw/sites/ddd/ddd09/vendor/rails/activesupport/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+	from ./script/../config/../vendor/rails/railties/lib/initializer.rb:356:in `load_environment'
+	from ./script/../config/../vendor/rails/railties/lib/initializer.rb:137:in `process'
+	from ./script/../config/../vendor/rails/railties/lib/initializer.rb:113:in `send'
+	from ./script/../config/../vendor/rails/railties/lib/initializer.rb:113:in `run'
+	from /Users/dinshaw/sites/ddd/ddd09/config/environment.rb:9
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/dinshaw/sites/ddd/ddd09/vendor/rails/activesupport/lib/active_support/dependencies.rb:156:in `require'
+	from /Users/dinshaw/sites/ddd/ddd09/vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+	from /Users/dinshaw/sites/ddd/ddd09/vendor/rails/activesupport/lib/active_support/dependencies.rb:156:in `require'
+	from /Users/dinshaw/sites/ddd/ddd09/vendor/rails/railties/lib/commands/server.rb:84
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from script/server:3
+dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment productiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment productiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment productiodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment productidinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment productdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment producdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment produdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment proddinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment prodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment prdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment pdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmentdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmendinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envirodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmendinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmentdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environment[1Pproductiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmentdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmen[1Pproductiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmendinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environme[1Pproductiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmedinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environm[1Pproductiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environmdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environ[1Pproductiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -environdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -enviro[1Pproductiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envirodinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envir[1Pproductiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envirdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envi[1Pproductiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envidinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -env[1Pproductiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -envdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -en[1Pproductiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -endinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -e[1Pproductiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -e
+=> Booting Mongrel
+=> Rails 2.3.1 application starting on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-15 20:03:14) [GET]
+
+ActionController::RoutingError (No route matches "/asd" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+^CExiting
+dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -eproductiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -eproductiondinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -[Kdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server -dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server [Kdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server dinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server[Kdinshaw-gobhais-computer:~/sites/ddd/ddd09 dinshaw$ script/server
+=> Booting Mongrel
+=> Rails 2.3.1 application starting on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-03-15 20:03:27) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mAdmin::CmsPage Load (0.4ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered cms_pages/_show (5.2ms)
+Completed in 34ms (View: 26, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#errors to css (for 127.0.0.1 at 2009-03-15 20:03:28) [GET]
+  Parameters: {"format"=>"css", "action"=>"errors", "controller"=>"stylesheets"}
+
+ActionController::UnknownAction (No action responded to errors. Actions: access_denied, admin, check_roles, content, do_colors, forms, layout, lists, maintenance, nav, public, reset, role_requirements, role_requirements=, tables, and typography):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StylesheetsController#errors to css (for 127.0.0.1 at 2009-03-15 20:03:41) [GET]
+  Parameters: {"format"=>"css", "action"=>"errors", "controller"=>"stylesheets"}
+
+ActionController::UnknownAction (No action responded to errors. Actions: access_denied, admin, check_roles, content, do_colors, forms, layout, lists, maintenance, nav, public, reset, role_requirements, role_requirements=, tables, and typography):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StylesheetsController#errors to css (for 127.0.0.1 at 2009-03-15 20:05:46) [GET]
+  Parameters: {"format"=>"css", "action"=>"errors", "controller"=>"stylesheets"}
+
+ActionController::UnknownAction (No action responded to errors. Actions: access_denied, admin, check_roles, content, do_colors, forms, layout, lists, maintenance, nav, public, reset, role_requirements, role_requirements=, tables, and typography):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StylesheetsController#errors to css (for 127.0.0.1 at 2009-03-15 20:05:48) [GET]
+  Parameters: {"format"=>"css", "action"=>"errors", "controller"=>"stylesheets"}
+
+ActionController::UnknownAction (No action responded to errors. Actions: access_denied, admin, check_roles, content, do_colors, forms, layout, lists, maintenance, nav, public, reset, role_requirements, role_requirements=, tables, and typography):
+  
+
+Rendering
+ActionController::UnknownAction (No action responded to errors. Actions: access_denied, admin, check_roles, content, do_colors, forms, layout, lists, maintenance, nav, public, reset, role_requirements, role_requirements=, tables, and typography):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-03-15 20:06:10) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+ rescues/layout (not_found)
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-03-15 20:06:10) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+c, reset, role_requirements, role_requirements=, tables, and typography):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-15 20:06:19) [GET]
+
+ActionController::RoutingError (No route matches "/home" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-03-15 20:06:23) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mAdmin::CmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered cms_pages/_show (3.5ms)
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-03-15 20:06:23) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+Rendering stylesheets/content
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing StylesheetsController#errors to css (for 127.0.0.1 at 2009-03-15 20:06:23) [GET]
+  Parameters: {"format"=>"css", "action"=>"errors", "controller"=>"stylesheets"}
+
+ActionController::UnknownAction (No action responded to errors. Actions: access_denied, admin, check_roles, content, do_colors, forms, layout, lists, maintenance, nav, public, reset, role_requirements, role_requirements=, tables, and typography):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-03-15 20:06:39) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mAdmin::CmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered cms_pages/_show (3.2ms)
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-03-15 20:06:39) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+Rendering stylesheets/content
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing StylesheetsController#errors to css (for 127.0.0.1 at 2009-03-15 20:06:40) [GET]
+  Parameters: {"format"=>"css", "action"=>"errors", "controller"=>"stylesheets"}
+
+ActionController::UnknownAction (No action responded to errors. Actions: access_denied, admin, check_roles, content, do_colors, forms, layout, lists, maintenance, nav, public, reset, role_requirements, role_requirements=, tables, and typography):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-03-15 20:07:15) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mAdmin::CmsPage Load (0.4ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered cms_pages/_show (3.2ms)
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-03-15 20:07:15) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+Rendering stylesheets/content
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing StylesheetsController#errors to css (for 127.0.0.1 at 2009-03-15 20:07:15) [GET]
+  Parameters: {"format"=>"css", "action"=>"errors", "controller"=>"stylesheets"}
+
+ActionController::UnknownAction (No action responded to errors. Actions: access_denied, admin, check_roles, content, do_colors, forms, layout, lists, maintenance, nav, public, reset, role_requirements, role_requirements=, tables, and typography):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-03-15 20:07:23) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mAdmin::CmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered cms_pages/_show (3.1ms)
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-03-15 20:07:23) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+Rendering stylesheets/content
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing StylesheetsController#errors to css (for 127.0.0.1 at 2009-03-15 20:07:23) [GET]
+  Parameters: {"format"=>"css", "action"=>"errors", "controller"=>"stylesheets"}
+
+ActionController::UnknownAction (No action responded to errors. Actions: access_denied, admin, check_roles, content, do_colors, forms, layout, lists, maintenance, nav, public, reset, role_requirements, role_requirements=, tables, and typography):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-03-15 20:08:17) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mAdmin::CmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered cms_pages/_show (3.3ms)
+Completed in 82ms (View: 76, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-03-15 20:08:18) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+Rendering stylesheets/content
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing StylesheetsController#errors to css (for 127.0.0.1 at 2009-03-15 20:08:18) [GET]
+  Parameters: {"format"=>"css", "action"=>"errors", "controller"=>"stylesheets"}
+
+ActionController::UnknownAction (No action responded to errors. Actions: access_denied, admin, check_roles, content, do_colors, forms, layout, lists, maintenance, nav, public, reset, role_requirements, role_requirements=, tables, and typography):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-03-15 20:08:22) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mAdmin::CmsPage Load (0.5ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered cms_pages/_show (3.2ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://127.0.0.1/]
