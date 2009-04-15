@@ -3,6 +3,8 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
   SITE_NAME = "Dinshaw Design & Development"
+  ADMINEMAIL = "info@dinshawdesign.com"
+  
   config.gem 'openrain-action_mailer_tls', :lib => 'smtp_tls.rb', :source => 'http://gems.github.com'
   config.gem 'capistrano'
   config.gem 'ruby-openid', :lib => 'openid'
@@ -13,6 +15,8 @@ Rails::Initializer.run do |config|
   config.gem 'RedCloth', :lib => 'redcloth'
   config.gem 'hpricot', :source => 'http://code.whytheluckystiff.net'
   config.gem 'sqlite3-ruby', :lib => 'sqlite3'
+  config.gem "friendly_id"
+  
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded.
@@ -45,3 +49,4 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+require 'friendly_id'

@@ -1,24 +1,38 @@
-
-<%= f.error_messages %>
-
+<p>
   <%= f.label :reference_string %>
   <%= f.text_field :reference_string %>
-
+</p>
+<p>
   <%= f.label :title %>
   <%= f.text_field :title %>
-
+</p>
+<p>
   <%= f.label :sub_title %>
   <%= f.text_area :sub_title, :class => :small %>
-
+</p>
+<p>
+  <%= f.label :sub_title_url %>
+  <%= f.text_field :sub_title_url, :class => :small %>
+</p>
+<p>
+  <%= f.label :path %>
+  <%= f.text_field :path %>
+</p>
+<p>
   <%= f.label :body %>
-  <%= f.text_area :body, :class => :large %>
+  <%= f.text_area :body %>
+</p>
 
+<p>
+  <%= f.label :parent_id %>
+  <%= f.collection_select :parent_id, CmsPage.roots, :id, :reference_string, :include_blank => "None" %>
+</p>
+
+<p>
   <%= f.label :meta_keyword %>
   <%= f.text_area :meta_keyword, :class => :small %>
-
+</p>
+<p>
   <%= f.label :meta_description %>
   <%= f.text_area :meta_description, :class => :small %>
-
-  <!-- <%= f.label :parent_id %>
-    <%= f.text_field :parent_id %> -->
-
+</p>

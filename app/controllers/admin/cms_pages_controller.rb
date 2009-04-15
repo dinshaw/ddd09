@@ -1,4 +1,4 @@
-class Admin::CmsPagesController < ApplicationController
+class Admin::CmsPagesController < AdminController
   # GET /admin/cms_pages
   # GET /admin/cms_pages.xml
   def index
@@ -40,6 +40,7 @@ class Admin::CmsPagesController < ApplicationController
   # POST /admin/cms_pages
   # POST /admin/cms_pages.xml
   def create
+    params[:cms_page][:parent_id] = 0 if params[:cms_page][:parent_id].blank?
     @cms_page = CmsPage.new(params[:cms_page])
 
     respond_to do |format|
@@ -58,10 +59,10 @@ class Admin::CmsPagesController < ApplicationController
   # PUT /admin/cms_pages/1.xml
   def update
     @cms_page = CmsPage.find(params[:id])
-
+    params[:cms_page][:parent_id] = 0 if params[:cms_page][:parent_id].blank?
     respond_to do |format|
       if @cms_page.update_attributes(params[:cms_page])
-        flash[:notice] = 'CmsPage was successfully updated.'
+        flash[:notice] = 'CMS Page was successfully updated.'
         format.html { redirect_to(['admin', @cms_page]) }
         format.xml  { head :ok }
       else

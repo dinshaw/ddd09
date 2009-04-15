@@ -4,50 +4,53 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-	<title>untitled</title>
+	<title><%= page_title %></title>
 	<%= javascript_include_tag 'jquery', 'jquery.autocomplete', 'application' %>
-	<%= stylesheet_link_tag 'layout', 'reset', 'typography', 'content', 'nav', 'errors', 'tables', 'forms', 'autocomplete' %>
+	<%= stylesheet_link_tag 'reset', 'layout', 'typography', 'content', 'nav', 'tables', 'forms', 'autocomplete', 'admin' %>
 </head>
 
-<body>
-	<div id="container">
-		<div id="canvas">
-			<div id="nav-main">
-				<ul>
-					<li><%= link_to "methodology"%></li>
-					<li><%= link_to "projects"%></li>
-					<li><%= link_to "clients"%></li>
-					<li><%= link_to "railsnstuf.com"%></li>
-					<li><%= link_to "pcgi.it"%></li>
-					<li class="last"><%= link_to "contact"%></li>
-				</ul>
-			</div> <!-- nav-main -->
-
-			<br class="clear" />
-			<br class="clear" />
-			
+<body id="admin">
+	<div id="wrapper">
+		<div id="branding">
+			<div id="contact-info">
 				<h1>Admin Area</h1>
-				<div id="nav-admin">
-					<ul>
-						<li><%= link_to "Posts", admin_posts_path %></li>
-						<li><%= link_to "Projects"%></li>
-						<li><%= link_to "Clients"%></li>
-						<li><%= link_to "Config Values"%></li>
-						<li><%= link_to "Users"%></li>
-					</ul>
-				</div> <!-- nav-admin -->
+				<p><%= link_to "Public Side", root_path %></p>
+			</div>
+			<%= link_to image_tag("logo.gif"), root_path, :id => :logo %>
 
-				<br class="clear" />
-				<br class="clear" />				
+		</div> <!-- branding -->
 
-			<div id="content-admin">
-				<div id="content-main-spacer">
+		<div id="nav-main" class="nav">
+			<div id="nav-admin">
+				<ul>
+					<%= main_nav %>
+				</ul>
+			</div> <!-- nav-admin -->
+
+		</div>
+		<div id="canvas">
+		
+			<div id="content">
+
+				<h1><%= @cms_page.title %></h1>
+
+				<div id="content-main">
 					<%= flash_block %>
 					<%= yield %>
-				</div>
-			</div> <!-- content-main -->
+				</div> <!-- content-main -->
+				
+
+			</div> <!-- content -->
 
 		</div> <!-- canvas -->
-	</div> <!-- container -->
+
+		<div id="push"></div> <!-- needed for footer placement -->
+
+	</div> <!-- wrapper -->
+
+	<div id="footer">
+		<p>all content &copy; copyright <%= Date.today.year %> dinshaw design &amp; development. all rights reserved. <%= link_to "CSS 2.1" %> | <%= link_to "XHTML 1.0 Strict" %> | <%= link_to "login", login_path %></p>
+	</div> <!-- footer -->
+
 </body>
 </html>

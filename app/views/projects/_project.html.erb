@@ -1,0 +1,11 @@
+<% teaser ||= false %>
+<%=  %>
+<% div_for project, :class => 'content-section' do %>
+	<h2><span><%= link_to project.url, project.url, :target => '_blank' %></span><%= link_to project.title, projects_path(:anchor => "project_#{project.id}") %></h2>
+	<%= link_to image_tag( project.photo.url ), projects_path(:anchor => project.id) %>
+	<%= textilize project.teaser %>
+	<%- unless teaser -%>
+	<%= textilize project.description  %>
+	<p><%= link_to "back to top" %></p>
+	<%- end -%>
+<% end %>

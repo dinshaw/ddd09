@@ -1,44 +1,4 @@
-<p>
-  <b>Reference string:</b>
-  <%=h @cms_page.reference_string %>
-</p>
-
-<p>
-  <b>Title:</b>
-  <%=h @cms_page.title %>
-</p>
-
-<p>
-  <b>Sub title:</b>
-  <%=h @cms_page.sub_title %>
-</p>
-
-<p>
-  <b>Body:</b>
-  <%=h @cms_page.body %>
-</p>
-
-<p>
-  <b>Meta keyword:</b>
-  <%=h @cms_page.meta_keyword %>
-</p>
-
-<p>
-  <b>Meta description:</b>
-  <%=h @cms_page.meta_description %>
-</p>
-
-<p>
-  <b>Position:</b>
-  <%=h @cms_page.position %>
-</p>
-
-<p>
-  <b>Parent:</b>
-  <%=h @cms_page.parent_id %>
-</p>
-
-
-<%= link_to 'Edit', edit_admin_cms_page_path(@cms_page) %> |
-<%= link_to 'Back', admin_cms_pages_path %>
-
+<p><%= link_to 'Edit', edit_admin_cms_page_path(@cms_page) %> | <%= link_to 'Back', admin_cms_pages_path %></p>
+<h1><%= @cms_page.title %></h1>
+<%- if !@cms_page.sub_title.blank? -%><h2><%= link_to_unless @cms_page.sub_title_url.blank?, textilize(@cms_page.sub_title), @cms_page.sub_title_url %></h2><%- end -%>
+<%=textilize @cms_page.body -%>

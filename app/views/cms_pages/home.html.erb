@@ -1,29 +1,3 @@
 <h1>Featured Project</h1>
 
-<div class="content-section">
-	<h2><span><%= link_to "http://zxonex.com" %></span><%= link_to "ZXONEX" %></h2>
-	<%= link_to image_tag("projects/zxonex.gif") %>
-	<%= textilize "_ZXONEX is a politically-focused online-community monotized by the sale of advertising space._
-
-	ZXONEX began as a code review for Adam, who found me on Craigslist. After the review, it was clear that ZXONEX had been afflicted by, the very common, bad-developer-syndrom. We decided to start from scratch. Adam and I spent our discovery phase translating his innovative vision of a politically-focused online-community into a functional specification and development plan.
-
-	Some of ZXONEX’s feature highlights include a fast and granular search engine powered by Thinking-Sphinx and YouTube-like video uploading and encoding.
-
-	ZXONEX is a Ruby On Rails application. Primary development was done on Rails 2.3.2. It is hosted on a VPS with a Mongrel cluster proxied by Apache. Database is MySQL.
-
-	The client side is valid XHTML 1.0 Strict and CSS 2.1. jQuery is used for the dom-scripting and AJAX." %>
-</div>
-
-<div class="content-section">
-	<h2><span><%= link_to "http://creditdesk.org" %></span>Credit Desk</h2>
-	<%= link_to image_tag("projects/creditdesk.gif") %>
-	<%= textilize "_Creditdesk is an online tool for reporting your own, good credit activity. After submitting activity, such as payment of a monthly bill, data is reviewed and verified by an accredited [credit agency]. Credit reports are made available to approved, credit-lending institutions._
-
-	_Credit Desk users pay a monthly charge lenders pay a fee for the generation of reports. All funds are collected on site through an online payment gateway._
-
-	The Credit Desk project began as a code-review for Yoshi and Jake. The site had been partially built but had run into trouble because the chosen technologies were deficient and unable to realize the full functional requirements.
-
-	Yoshi and Jake agreed to begin a formal discovery phase, even though they had already spent time and money documenting the needs of the site. Almost immediately, a clear picture of the site’s functionality and interfaces came into being, and we were able to identify and resolve many development issues before coding began.
-
-	Development of the Credit Desk application continues as we optimize this innovative and timely online resource." %>
-</div>
+	<%= render  :partial => "projects/project", :locals => { :project => @featured_project, :teaser => true } %>

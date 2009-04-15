@@ -9,37 +9,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090415045342) do
+ActiveRecord::Schema.define(:version => 20090415192715) do
 
   create_table "cms_pages", :force => true do |t|
     t.string   "reference_string"
     t.string   "title"
-    t.string   "sub_title"
+    t.text     "sub_title"
+    t.string   "sub_title_url"
     t.text     "body"
     t.text     "meta_keyword"
     t.text     "meta_description"
     t.integer  "position"
-    t.integer  "parent_id"
+    t.integer  "parent_id",        :default => 0, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "comments", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "url"
-    t.text     "comment"
-    t.integer  "commentable_id"
-    t.string   "commentable_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "path"
   end
 
   create_table "config_values", :force => true do |t|
     t.string   "name"
     t.string   "value"
     t.integer  "position"
-    t.boolean  "sys_var"
+    t.boolean  "sys_var",    :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -54,21 +45,23 @@ ActiveRecord::Schema.define(:version => 20090415045342) do
   end
 
   create_table "open_id_authentication_nonces", :force => true do |t|
-    t.integer "timestamp",  :null => false
+    t.integer "timestamp",                  :null => false
     t.string  "server_url"
-    t.string  "salt",       :null => false
+    t.string  "salt",       :default => "", :null => false
   end
 
-  create_table "posts", :force => true do |t|
-    t.string   "reference_string"
+  create_table "projects", :force => true do |t|
     t.string   "title"
-    t.string   "sub_title"
-    t.text     "body"
-    t.text     "meta_description"
-    t.text     "meta_keyword"
+    t.string   "url"
+    t.text     "teaser"
+    t.text     "description"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
     t.integer  "position"
-    t.integer  "parent_id"
-    t.boolean  "allow_comments"
+    t.integer  "parent_id",          :default => 0, :null => false
+    t.boolean  "featured"
+    t.datetime "featured_on"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -86,7 +79,7 @@ ActiveRecord::Schema.define(:version => 20090415045342) do
   add_index "roles_users", ["user_id"], :name => "index_roles_users_on_user_id"
 
   create_table "sessions", :force => true do |t|
-    t.string   "session_id", :null => false
+    t.string   "session_id", :default => "", :null => false
     t.text     "data"
     t.datetime "created_at"
     t.datetime "updated_at"

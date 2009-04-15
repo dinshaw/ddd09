@@ -35,14 +35,17 @@ h1{
 
 h2{
 	font-size:1.3em;
-		margin-bottom:<%= @top_margin %>px;
+	line-height:1.7em;
 }
 
 #side-bar{
 	font-size:0.9em;	
 }
 
-p{
-	margin:0 0 10px;
+#content-main p, #content-main li{
+	font-size:1.2em;
+}
+#content-main p,#content-main ul, #content-main ol{
+	margin:0 0 <%= @p_bottom %>em;
 	line-height:1.7em;
 }

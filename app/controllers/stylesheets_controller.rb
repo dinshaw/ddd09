@@ -2,7 +2,7 @@ class StylesheetsController < ApplicationController
   layout false
   
   before_filter :color, :size
-
+  skip_before_filter :get_cms_page, :nav_items, :process_nav_items, :login_required
   @@all_files = [:layout, :content, :admin, :nav, :maintenance, :reset, :tables, :lists, :typography, :forms, :public]
   caches_page :layout, :content, :admin, :nav, :maintenance, :reset, :center_layout, :tables, :typography, :forms, :autocomplete
   
@@ -17,7 +17,7 @@ class StylesheetsController < ApplicationController
   end
   
   def color
-    @bg = '#fffeec'
+    @bg = '#fffeec' # eeeedd
     @text = '#343232'
     @link = '#a21b05'
     @title = '#671204'
@@ -32,5 +32,6 @@ class StylesheetsController < ApplicationController
     @side_margin = 50
     @top_margin = 25
     @side_bar = 250
+    @p_bottom = 1.7
   end
 end

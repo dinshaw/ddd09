@@ -1,4 +1,4 @@
-# Methods added to this helper will be available to all templates in the application.
+require 'enumerator'
 module ApplicationHelper
   # custom error message style
   # def error_messages_for(*params)
@@ -29,6 +29,12 @@ module ApplicationHelper
     if [!flash[:message].blank?,!flash[:notice].blank?,!flash[:error].blank?].any?
       "<p id=\"flash\">#{flash[:notice]}#{flash[:error]}#{flash[:message]}</p>" 
     end
+  end
+  
+  def main_nav(nav_items=@nav_items)
+    nav_items.enum_with_index.map{ |ni,i|
+			content_tag :li, link_to(ni[0],ni[1]), :class => ni[2]
+		}.join("\n")
   end
   
   def is(value)

@@ -16,6 +16,9 @@
 				<ul>
 					<li>646.239.8325 <%= mail_to "info@dinshawdesign.com" %></li>
 					<li>dinshawg (Skype) gobyrock (AIM)</li>
+					<%- if logged_in? && current_user.has_role?('superuser') -%>
+					<li><%= link_to "Admin Area", admin_cms_pages_path %></li>
+					<%- end -%>
 				</ul>
 			</div>
 			<%= link_to image_tag("logo.gif"), root_path, :id => :logo %>
@@ -24,33 +27,25 @@
 
 		<div id="nav-main" class="nav">
 			<ul>
-				<li class="first"><%= link_to "Home", root_path %></li>
-				<li><%= link_to "Projects", "/projects"%></li>
-				<li><%= link_to "Bio &amp; Resume", "/clients"%></li>			
-				<li><%= link_to "Process", "/projects"%></li>							
-				<li><%= link_to "Enterprise", "/projects"%></li>										
-				<li class="last"><%= link_to "pcgi.it", 'http://pcgi.it' %></li>
+				<%= main_nav %>
 			</ul>
 		</div> <!-- nav-main -->
-		<!-- <div id="nav-sub" class="nav">
-			<ul>
-				<li class="first"><%= link_to "Free Consultation", root_path %></li>
-				<li class="current"><%= link_to "Discovery Phase", "/projects"%></li>														
-				<li><%= link_to "Design", "/projects"%></li>
-				<li><%= link_to "Development", "/clients"%></li>			
-				<li class="last"><%= link_to "QA", "/projects"%></li>							
-			</ul>
-		</div> --> <!-- nav-main -->
-
+		<%- if @process_nav_items -%>
+		<div id="nav-sub" class="nav">
+					<ul>
+						<%= main_nav(@process_nav_items) %>
+					</ul>
+				</div> <!-- nav-main -->
+		<%- end -%>
 		<div id="canvas">
 		
 			<div id="content">
 
 				<h1><%= @cms_page.title %></h1>
-				<%- if !@cms_page.sub_title.blank? -%><h2><%= @cms_page.sub_title %></h2><%- end -%>
-				<%=textilize @cms_page.body -%>
+				<%- if !@cms_page.sub_title.blank? -%><h2><%= link_to_unless @cms_page.sub_title_url.blank?, textilize(@cms_page.sub_title), @cms_page.sub_title_url %></h2><%- end -%>
 
 				<div id="content-main">
+					<%=textilize @cms_page.body -%>
 					<%= yield %>
 				</div> <!-- content-main -->
 				
@@ -65,7 +60,7 @@
 	</div> <!-- wrapper -->
 
 	<div id="footer">
-		<p>all content &copy; copyright <%= Date.today.year %> dinshaw design &amp; development. all rights reserved. <%= link_to "CSS 2.1" %> | <%= link_to "XHTML 1.0 STRICT" %></p>
+		<p>all content &copy; copyright <%= Date.today.year %> dinshaw design &amp; development. all rights reserved. <%= link_to "CSS 2.1" %> | <%= link_to "XHTML 1.0 Strict" %> | <%= link_to "login", login_path %></p>
 	</div> <!-- footer -->
 
 </body>

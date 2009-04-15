@@ -1,14 +1,23 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :cms_pages, :path_prefix => 'admin', :name_prefix => 'admin_', :controller => 'admin/cms_pages'
+  # map.resources :projects, :path_prefix => 'admin', :name_prefix => 'admin_', :controller => 'admin/projects'
+  # map.resources :cms_pages, :path_prefix => 'admin', :name_prefix => 'admin_', :controller => 'admin/cms_pages'
+  # map.resources :config_values, :path_prefix => 'admin', :name_prefix => 'admin_', :controller => 'admin/config_values'
 
-  map.resources :comments, :path_prefix => 'admin', :name_prefix => 'admin_', :controller => 'admin/comments'
-
-  map.resources :config_values, :path_prefix => 'admin', :name_prefix => 'admin_', :controller => 'admin/config_values'
-
-  map.resources :posts, :path_prefix => 'admin', :name_prefix => 'admin_', :controller => 'admin/posts'
+  map.resources :projects
 
   map.root :controller => 'cms_pages', :action => 'home'
+  map.home "home", :controller => 'cms_pages', :action => 'home'  
+  map.bio "bio", :controller => 'cms_pages', :action => 'bio'
+  map.process "process", :controller => 'cms_pages', :action => 'my_process'
+  map.enterprise "enterprise", :controller => 'cms_pages', :action => 'enterprise'    
+  map.pcgi "pcgi", :controller => 'cms_pages', :action => 'pcgi'
+  map.development "development", :controller => 'cms_pages', :action => 'development'
+  map.free_consultation "free_consultation", :controller => 'cms_pages', :action => 'free_consultation'
+  map.discovery "discovery", :controller => 'cms_pages', :action => 'discovery'
+  map.quality_assurance "quality_assurance", :controller => 'cms_pages', :action => 'quality_assurance'
+  map.design "design", :controller => 'cms_pages', :action => 'design'            
 
+  
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
@@ -23,9 +32,9 @@ ActionController::Routing::Routes.draw do |map|
 
 
   map.namespace :admin do |admin|
-    admin.resources :cms_pages, :config_values
+    admin.resources :cms_pages, :config_values, :projects
   end
-
+  
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action.:format'
   map.connect ':controller/:action/:id.:format'

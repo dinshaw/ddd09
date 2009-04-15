@@ -1,44 +1,11 @@
-<h1>New cms_page</h1>
+<% @cms_page.title = "New CMS Page"%>
+
+<p><%= link_to 'Back', admin_cms_pages_path %></p>
 
 <% form_for(['admin', @cms_page]) do |f| %>
   <%= f.error_messages %>
-
+	<%= render :partial => 'cms_page_fields', :locals => { :f => f } %>
   <p>
-    <%= f.label :reference_string %><br />
-    <%= f.text_field :reference_string %>
-  </p>
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :sub_title %><br />
-    <%= f.text_field :sub_title %>
-  </p>
-  <p>
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
-  </p>
-  <p>
-    <%= f.label :meta_keyword %><br />
-    <%= f.text_area :meta_keyword %>
-  </p>
-  <p>
-    <%= f.label :meta_description %><br />
-    <%= f.text_area :meta_description %>
-  </p>
-  <p>
-    <%= f.label :position %><br />
-    <%= f.text_field :position %>
-  </p>
-  <p>
-    <%= f.label :parent_id %><br />
-    <%= f.text_field :parent_id %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Create', :class => :btn %>
   </p>
 <% end %>
-
-<%= link_to 'Back', admin_cms_pages_path %>
-

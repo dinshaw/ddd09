@@ -1,0 +1,14 @@
+<%= @cms_page.title = "Editing project" %>
+
+<p><%= link_to 'Show', ['admin', @project] %> | <%= link_to 'Back', admin_projects_path %></p>
+
+<% form_for ['admin', @project], :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+	<%= render :partial => 'project_fields', :locals => { :f => f } %>
+  <p>
+    <%= f.submit 'Update', :class => :btn %>
+  </p>
+<% end %>
+
+
+

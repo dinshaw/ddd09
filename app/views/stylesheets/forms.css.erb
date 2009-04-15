@@ -1,17 +1,28 @@
 label{
 	display:block;
 	margin-bottom:3px;
-	color:<%= @light_grey %>;
-	font-weight:bold;
+	color:<%= @title %>;
 }
 input, textarea{
-	border:1px solid <%= @link_blue %>;
+	border:1px solid <%= @link_grey %>;
 	padding:6px 8px;
 	margin-bottom:20px;
 	font:1em helvetica, sans-serif;
 	color:<%= @text %>;
 }
 
+.btn{
+	background-color:<%= @title %>;
+	color:#fff;
+}
+.btn:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:500px;
+	height:300px;
+}
 textarea.large{
 	width:800px;
 	height:300px;
