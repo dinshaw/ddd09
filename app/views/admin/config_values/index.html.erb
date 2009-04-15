@@ -4,6 +4,7 @@
   <tr>
     <th>Name</th>
     <th>Value</th>
+    <th>Position</th>
     <th>Sys var</th>
   </tr>
 
@@ -11,14 +12,16 @@
   <tr>
     <td><%=h config_value.name %></td>
     <td><%=h config_value.value %></td>
+    <td><%=h config_value.position %></td>
     <td><%=h config_value.sys_var %></td>
-    <td><%= link_to 'Show', config_value %></td>
-    <td><%= link_to 'Edit', edit_config_value_path(config_value) %></td>
-    <td><%= link_to 'Destroy', config_value, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', admin_config_value_path(config_value) %></td>
+    <td><%= link_to 'Edit', edit_admin_config_value_path(config_value) %></td>
+    <td><%= link_to 'Destroy', admin_config_value_path(config_value), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New config_value', new_config_value_path %>
+<%= link_to 'New config_value', new_admin_config_value_path %>
+

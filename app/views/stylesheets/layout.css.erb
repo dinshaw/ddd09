@@ -1,37 +1,57 @@
-html, body {
-	height: 100%;
+* {
+	margin: 0;
+}
+body{
 	text-align:center;
 }
+html, body {
+	height: 100%;
+	background:<%= @bg %> url(/images/bg-grad-top.gif) repeat-x;
+}
 
-html>body #container {
-	height: auto;
-	width: 900px;
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -<%= @footer_height %>px; /* the bottom margin is the negative value of the footer's height */
+	text-align: center;
+	background:url(/images/bg-white.gif) 50% repeat-y;
+}
+
+#branding, #canvas{
+	width:<%= @width %>px;
 	margin:auto;
-	text-align:left;	
+	text-align: left;
 }
 
-#canvas{
-	margin:20px;
+#content{
+	margin:<%= @top_margin %>px <%= @side_margin %>px;
 }
 
+#footer, #push {
+	clear:both;
+	height: <%= @footer_height %>px; /* .push must be the same height as .footer */
+}
+
+#content-main, #side-bar{
+	margin:<%= @top_margin %>px 0;
+}
 #content-main{
 	float:left;
-	width:640px;
-	border:1px solid <%= @light_grey %>;
-	border-width:0 1px 0 0;
-	margin-bottom:30px;
+	width:<%= @width - @side_bar - @top_margin - (@side_margin * 2) %>px;	
 }
-
-#content-main-spacer{
-	margin-right:30px;
-}
-
 #side-bar{
+	width:<%= @side_bar %>px;
 	float:right;
-	margin-bottom:30px;	
+	border-left:1px solid <%= @light_grey %>;
+}
+#side-bar div{
+	margin:0 0 <%= @top_margin %>px  <%= @top_margin %>px;
 }
 
-#site-info {
-	clear:both;
-	margin-bottom:30px;	
-}
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+*/

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090315042411) do
+ActiveRecord::Schema.define(:version => 20090415045342) do
 
   create_table "cms_pages", :force => true do |t|
     t.string   "reference_string"
@@ -24,9 +24,21 @@ ActiveRecord::Schema.define(:version => 20090315042411) do
     t.datetime "updated_at"
   end
 
+  create_table "comments", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "url"
+    t.text     "comment"
+    t.integer  "commentable_id"
+    t.string   "commentable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "config_values", :force => true do |t|
     t.string   "name"
     t.string   "value"
+    t.integer  "position"
     t.boolean  "sys_var"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -45,6 +57,20 @@ ActiveRecord::Schema.define(:version => 20090315042411) do
     t.integer "timestamp",  :null => false
     t.string  "server_url"
     t.string  "salt",       :null => false
+  end
+
+  create_table "posts", :force => true do |t|
+    t.string   "reference_string"
+    t.string   "title"
+    t.string   "sub_title"
+    t.text     "body"
+    t.text     "meta_description"
+    t.text     "meta_keyword"
+    t.integer  "position"
+    t.integer  "parent_id"
+    t.boolean  "allow_comments"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "roles", :force => true do |t|

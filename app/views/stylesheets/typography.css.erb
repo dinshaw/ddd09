@@ -2,56 +2,47 @@
 default font_size / line_height
 -----------------------------------------------------------------------------*/
 body {
-    font:100% helvetica, arial, sans-serif;
-	line-height:1.5em;	
+	font-size:80%;
+	font-family: Verdana,Georgia, Arial, sans-serif;
+	line-height:1.4em;
 	color:<%= @text_main %>;
-}
-
-#contact-info, #site-info{
-	font-family:courier, mono-space;
-	color:#000;
-}
-
-#site-info{
-	font-size:0.775em;
 }
 
 /* =Links */
 a{
-	color:<%= @link_blue %>;
+	color:<%= @link %>;
 	text-decoration:none;
+	padding-bottom:0.1em;
 }
 a:hover{
-	border-bottom:1px solid <%= @link_blue %>;
+	color:<%= @text %>;
+	border-bottom:1px solid <%= @text %>;
 }
 
-
-/* =Headers */
-h1{
-	font-size:1.7em;
-	line-height:1em;
-	font-weight:normal;
+h1, h2, h3,h4,h5,h6 {
+	margin:0;
+	padding:0;
 	color:<%= @title %>;
-	margin:0 0 10px 0;
-}
-h2{
-	font-size:1.2em;
-	line-height:1em;
-	letter-spacing:0.05em;	
 	font-weight:normal;
-	font-style:italic;
-	color:<%= @med_grey %>;
-	margin:0 0 10px 0;
-}
-h4{
-	font-family:courier;
-	font-weight:normal;
-	font-size:2em;
-	margin-bottom:15px;
-	color:<%= @med_grey %>;
+	letter-spacing:0.03em;
 }
 
-/* =Lists */
-#tag-list li{
-	font-size:1em;
+h1{
+	font-family: Georgia, times new roman, times, serif;
+	font-size:1.7em;	
+	margin-bottom:10px;
+}
+
+h2{
+	font-size:1.3em;
+		margin-bottom:<%= @top_margin %>px;
+}
+
+#side-bar{
+	font-size:0.9em;	
+}
+
+p{
+	margin:0 0 10px;
+	line-height:1.7em;
 }

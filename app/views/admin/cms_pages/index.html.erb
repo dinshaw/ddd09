@@ -1,9 +1,8 @@
-<h1>Listing CMS Pages</h1>
-<p><%= link_to 'New CMS Page', new_admin_cms_page_path %></p>
+<h1>Listing cms_pages</h1>
 
 <table>
   <tr>
-    <th>Reference String</th>
+    <th>Reference string</th>
     <th>Title</th>
     <th>Sub title</th>
     <th>Body</th>
@@ -14,7 +13,7 @@
   </tr>
 
 <% @cms_pages.each do |cms_page| %>
-  <tr class="<%= cycle "odd", "even" %>">
+  <tr>
     <td><%=h cms_page.reference_string %></td>
     <td><%=h cms_page.title %></td>
     <td><%=h cms_page.sub_title %></td>
@@ -29,4 +28,8 @@
   </tr>
 <% end %>
 </table>
+
+<br />
+
+<%= link_to 'New cms_page', new_admin_cms_page_path %>
 

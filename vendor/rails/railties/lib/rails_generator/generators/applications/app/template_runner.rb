@@ -90,7 +90,7 @@ module Rails
       gems_code = "config.gem '#{name}'"
 
       if options.any?
-        opts = options.inject([]) {|result, h| result << [":#{h[0]} => '#{h[1]}'"] }.sort.join(", ")
+        opts = options.inject([]) {|result, h| result << [":#{h[0]} => #{h[1].inspect.gsub('"',"'")}"] }.sort.join(", ")
         gems_code << ", #{opts}"
       end
 
@@ -117,35 +117,6 @@ module Rails
         end
       end
     end
-    
-    
-        # Adds an include line to the ApplicationController
-        def application_include(data)
-          log 'application_include', data
-          
-          sentinel = 'class ApplicationController < ActionController::Base'
-          in_root do
-            gsub_file 'app/controllers/application_controller.rb', /(#{Regexp.escape(sentinel)})/mi do |match|
-              "#{match}\n  " << "include #{data}"
-            end
-          end
-        end
-
-        # uncomments the observer line in environment.rb
-        # appends the supplied string
-        # adds '_observer' if it is not given
-        def add_observer(name)
-          log 'add_observer', name
-          
-          name += "_observer" if !name.match("_observer")
-          in_root do
-            # do this one first so it never does both
-            gsub_file 'config/environment.rb', /[^#]\s*(config.active_record.observers = .*)/i do |match|
-              "#{match}, :" << name
-            end
-            gsub_file 'config/environment.rb', /#\s*(config.active_record.observers =).*/i, ['\1',' :',name].join
-          end
-        end
 
     # Run a command in git.
     #

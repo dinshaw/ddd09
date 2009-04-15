@@ -1,6 +1,6 @@
 <h1>Editing config_value</h1>
 
-<% form_for(@config_value) do |f| %>
+<% form_for(['admin', @config_value]) do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -12,6 +12,10 @@
     <%= f.text_field :value %>
   </p>
   <p>
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </p>
+  <p>
     <%= f.label :sys_var %><br />
     <%= f.check_box :sys_var %>
   </p>
@@ -20,5 +24,6 @@
   </p>
 <% end %>
 
-<%= link_to 'Show', @config_value %> |
-<%= link_to 'Back', config_values_path %>
+<%= link_to 'Show', ['admin', @config_value] %> |
+<%= link_to 'Back', admin_config_values_path %>
+

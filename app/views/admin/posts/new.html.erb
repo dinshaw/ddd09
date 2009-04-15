@@ -1,0 +1,10 @@
+<h1>New post</h1>
+
+<% form_for(['admin', @post]) do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => "post_fields", :locals => { :f => f } %>
+    <%= f.submit 'Create' %>
+<% end %>
+
+<%= link_to 'Back', admin_posts_path %>
+

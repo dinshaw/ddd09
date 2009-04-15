@@ -9,10 +9,16 @@
 </p>
 
 <p>
+  <b>Position:</b>
+  <%=h @config_value.position %>
+</p>
+
+<p>
   <b>Sys var:</b>
   <%=h @config_value.sys_var %>
 </p>
 
 
-<%= link_to 'Edit', edit_config_value_path(@config_value) %> |
-<%= link_to 'Back', config_values_path %>
+<%= link_to 'Edit', edit_admin_config_value_path(@config_value) %> |
+<%= link_to 'Back', admin_config_values_path %>
+

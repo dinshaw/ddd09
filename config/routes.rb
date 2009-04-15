@@ -1,9 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :cms_pages, :path_prefix => 'admin', :name_prefix => 'admin_', :controller => 'admin/cms_pages'
+
+  map.resources :comments, :path_prefix => 'admin', :name_prefix => 'admin_', :controller => 'admin/comments'
+
+  map.resources :config_values, :path_prefix => 'admin', :name_prefix => 'admin_', :controller => 'admin/config_values'
+
+  map.resources :posts, :path_prefix => 'admin', :name_prefix => 'admin_', :controller => 'admin/posts'
+
   map.root :controller => 'cms_pages', :action => 'home'
-
-  map.resources :config_values
-
-  map.resources :cms_pages
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'

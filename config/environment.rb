@@ -1,17 +1,13 @@
-# Be sure to restart your server when you modify this file
-
-# Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.3.1' unless defined? RAILS_GEM_VERSION
-
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
+  SITE_NAME = "Dinshaw Design & Development"
   config.gem 'openrain-action_mailer_tls', :lib => 'smtp_tls.rb', :source => 'http://gems.github.com'
   config.gem 'capistrano'
   config.gem 'ruby-openid', :lib => 'openid'
   config.gem 'rubyist-aasm', :lib => 'aasm'
-  config.gem 'mislav-will_paginate', :lib => 'will_paginate', :source => 'http://gems.github.com', :version => '~> 2.2.3'
+  config.gem 'mislav-will_paginate', :lib => 'will_paginate', :source => 'http://gems.github.com'
   config.gem 'prawn', :source => 'http://gems.github.com'
   config.gem 'chronic', :source => 'http://gems.github.com'
   config.gem 'RedCloth', :lib => 'redcloth'
@@ -22,7 +18,7 @@ Rails::Initializer.run do |config|
   # -- all .rb files in that directory are automatically loaded.
 
   # Add additional load paths for your own custom dirs
-  # config.load_paths += %W( #{RAILS_ROOT}/extras )
+  config.load_paths += %W( #{RAILS_ROOT}/admin )
 
   # Specify gems that this application depends on and have them installed with rake gems:install
   # config.gem "bj"

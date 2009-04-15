@@ -4,79 +4,69 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-	<title>untitled</title>
+	<title><%= page_title %></title>
 	<%= javascript_include_tag 'jquery', 'jquery.autocomplete', 'application' %>
-	<%= stylesheet_link_tag 'layout', 'reset', 'typography', 'content', 'nav', 'errors', 'tables', 'forms', 'autocomplete' %>
+	<%= stylesheet_link_tag 'reset', 'layout', 'typography', 'content', 'nav', 'tables', 'forms', 'autocomplete' %>
 </head>
 
 <body>
-	<div id="container">
-		<div id="canvas">
-			<div id="nav-main">
+	<div id="wrapper">
+		<div id="branding">
+			<div id="contact-info">
 				<ul>
-					<li><%= link_to "methodology", root_path %></li>
-					<li><%= link_to "projects", "/projects"%></li>
-					<li><%= link_to "clients", "/clients"%></li>
-					<li><%= link_to "railsnstuf.com", 'http://railsnstuf.com' %></li>
-					<li class="last"><%= link_to "pcgi.it", 'http://pcgi.it' %></li>
+					<li>646.239.8325 <%= mail_to "info@dinshawdesign.com" %></li>
+					<li>dinshawg (Skype) gobyrock (AIM)</li>
 				</ul>
-			</div> <!-- nav-main -->
+			</div>
+			<%= link_to image_tag("logo.gif"), root_path, :id => :logo %>
 
-			<div id="branding">
-				<div id="contact-info">
-					<ul>
-						<li>Dinshaw C. Gobhai</li>
-						<li>646.239.8325 <%= mail_to "info@dinshawdesign.com" %></li>
-						<li>dinshawg (Skype) gobyrock (AIM)</li>
-					</ul>
-				</div>
-				<%= link_to image_tag("logo.gif"), root_path %>
-			</div> <!-- branding -->
+		</div> <!-- branding -->
 
-			<div id="content-main">
-				<div id="content-main-spacer">
-					<%= flash_block %>
+		<div id="nav-main" class="nav">
+			<ul>
+				<li class="first"><%= link_to "Home", root_path %></li>
+				<li><%= link_to "Projects", "/projects"%></li>
+				<li><%= link_to "Bio &amp; Resume", "/clients"%></li>			
+				<li><%= link_to "Process", "/projects"%></li>							
+				<li><%= link_to "Enterprise", "/projects"%></li>										
+				<li class="last"><%= link_to "pcgi.it", 'http://pcgi.it' %></li>
+			</ul>
+		</div> <!-- nav-main -->
+		<!-- <div id="nav-sub" class="nav">
+			<ul>
+				<li class="first"><%= link_to "Free Consultation", root_path %></li>
+				<li class="current"><%= link_to "Discovery Phase", "/projects"%></li>														
+				<li><%= link_to "Design", "/projects"%></li>
+				<li><%= link_to "Development", "/clients"%></li>			
+				<li class="last"><%= link_to "QA", "/projects"%></li>							
+			</ul>
+		</div> --> <!-- nav-main -->
+
+		<div id="canvas">
+		
+			<div id="content">
+
+				<h1><%= @cms_page.title %></h1>
+				<%- if !@cms_page.sub_title.blank? -%><h2><%= @cms_page.sub_title %></h2><%- end -%>
+				<%=textilize @cms_page.body -%>
+
+				<div id="content-main">
 					<%= yield %>
-				</div>
-			</div> <!-- content-main -->
+				</div> <!-- content-main -->
+				
+				<%= render :partial => "layouts/side_bar" %>
 
-			<div id="side-bar">
-				<div id="tag-list">
-					<h4>Tags</h4>
-					<ul>
-						<li><%= link_to "development" %></li>
-						<li><%= link_to "planning"%></li>
-						<li><%= link_to "discovery"%></li>
-						<li><%= link_to "consultation"%></li>
-						<li><%= link_to "wireframe"%></li>
-						<li><%= link_to "IA"%></li>
-						<li><%= link_to "information architecture"%></li>
-						<li><%= link_to "proto-site"%></li>
-						<li><%= link_to "usability"%></li>
-						<li><%= link_to "development team"%></li>
-						<li><%= link_to "design"%></li>
-						<li><%= link_to "full life-cycle"%></li>
-						<li><%= link_to "small projects"%></li>
-						<li><%= link_to "scripting"%></li>
-						<li><%= link_to "code review"%></li>
-						<li><%= link_to "cms"%></li>
-						<li><%= link_to "content management"%></li>
-						<li><%= link_to "bad developer syndrome"%></li>
-						<li><%= link_to "BDS"%></li>
-						<li><%= link_to "XHTML"%></li>
-						<li><%= link_to "CSS"%></li>
-						<li><%= link_to "validation"%></li>
-						<li><%= link_to "semantic markup"%></li>
-						<li><%= link_to "markup"%></li>
-						<li><%= link_to "validation"%></li>
-					</ul>
-				</div> <!-- tag-list -->
-			</div> <!-- side-bar -->
-			
-			<div id="site-info">
-				<p>all content &copy; copyright <%= Date.today.year %> dinshaw design &amp; development. all rights reserved. <%= link_to "CSS 2.1" %> | <%= link_to "XHTML 1.0 STRICT" %></p>
-			</div> <!-- site-info -->
+			</div> <!-- content -->
+
 		</div> <!-- canvas -->
-	</div> <!-- container -->
+
+		<div id="push"></div> <!-- needed for footer placement -->
+
+	</div> <!-- wrapper -->
+
+	<div id="footer">
+		<p>all content &copy; copyright <%= Date.today.year %> dinshaw design &amp; development. all rights reserved. <%= link_to "CSS 2.1" %> | <%= link_to "XHTML 1.0 STRICT" %></p>
+	</div> <!-- footer -->
+
 </body>
 </html>

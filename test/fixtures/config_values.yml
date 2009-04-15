@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  value: MyString
+  position: 1
+  sys_var: false
+
+two:
+  name: MyString
+  value: MyString
+  position: 1
+  sys_var: false

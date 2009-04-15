@@ -1,0 +1,34 @@
+<p>
+  <b>Name:</b>
+  <%=h @comment.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @comment.email %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @comment.url %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%=h @comment.comment %>
+</p>
+
+<p>
+  <b>Commentable:</b>
+  <%=h @comment.commentable_id %>
+</p>
+
+<p>
+  <b>Commentable type:</b>
+  <%=h @comment.commentable_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_comment_path(@comment) %> |
+<%= link_to 'Back', admin_comments_path %>
+
