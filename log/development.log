@@ -44100,3 +44100,644 @@ Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 04:
   [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
 Rendering stylesheets/content
 Completed in 11ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:10:54) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mCmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:10:54) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:10:54) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:11:27) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:11:27) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 81ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:11:27) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:12:42) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mCmsPage Load (0.4ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:12:42) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:12:43) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:12:54) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:12:55) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:12:55) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:15:31) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mCmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.5ms)
+Completed in 44ms (View: 39, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:15:31) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:15:31) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:16:20) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.4ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.6ms)
+Completed in 44ms (View: 38, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:16:20) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:16:20) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:17:42) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mCmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:17:43) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:17:43) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:18:26) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:18:26) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:18:26) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:19:36) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mCmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:19:36) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (2.6ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 17ms (View: 1, DB: 3) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:19:36) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:19:46) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 87ms (View: 10, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:19:46) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:19:46) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:20:12) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mCmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:20:12) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:20:12) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:20:21) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:20:21) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 87ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:20:21) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:20:35) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mCmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:20:35) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:20:35) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:20:56) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:20:56) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:20:56) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 83ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-15 05:21:21) [GET]
+
+ActionController::RoutingError (No route matches "/clients" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:21:22) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mCmsPage Load (0.4ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.5ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:21:22) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:21:23) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:21:54) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:21:54) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:21:54) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:22:13) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mCmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:22:14) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 16ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:22:14) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:22:35) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.4ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:22:35) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:22:36) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:23:46) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mCmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:23:46) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:23:46) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 18ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:24:31) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:24:32) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:24:32) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:24:37) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;36;1mCmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.5ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:24:37) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:24:37) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:24:45) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:24:45) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#typography to css (for 127.0.0.1 at 2009-04-15 05:24:45) [GET]
+  Parameters: {"format"=>"css", "action"=>"typography", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Typography') LIMIT 1[0m
+Rendering stylesheets/typography
+Completed in 18ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/typography.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:24:45) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:28:46) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.4ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:28:46) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (1.7ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 14ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#typography to css (for 127.0.0.1 at 2009-04-15 05:28:46) [GET]
+  Parameters: {"format"=>"css", "action"=>"typography", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Typography') LIMIT 1[0m
+Rendering stylesheets/typography
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/typography.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:28:47) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:29:21) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.4ms)
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:29:21) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#typography to css (for 127.0.0.1 at 2009-04-15 05:29:21) [GET]
+  Parameters: {"format"=>"css", "action"=>"typography", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Typography') LIMIT 1[0m
+Rendering stylesheets/typography
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/typography.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:29:22) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:30:06) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.5ms)
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:30:06) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#typography to css (for 127.0.0.1 at 2009-04-15 05:30:06) [GET]
+  Parameters: {"format"=>"css", "action"=>"typography", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.2ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Typography') LIMIT 1[0m
+Rendering stylesheets/typography
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/typography.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:30:06) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
+
+
+Processing CmsPagesController#home (for 127.0.0.1 at 2009-04-15 05:30:20) [GET]
+  Parameters: {"action"=>"home", "controller"=>"cms_pages"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Cms Pages: Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering cms_pages/home
+Rendered layouts/_side_bar (0.5ms)
+Completed in 96ms (View: 90, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout to css (for 127.0.0.1 at 2009-04-15 05:30:21) [GET]
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.2ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Layout') LIMIT 1[0m
+Rendering stylesheets/layout
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#typography to css (for 127.0.0.1 at 2009-04-15 05:30:21) [GET]
+  Parameters: {"format"=>"css", "action"=>"typography", "controller"=>"stylesheets"}
+  [4;35;1mCmsPage Load (0.3ms)[0m   [0mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Typography') LIMIT 1[0m
+Rendering stylesheets/typography
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/typography.css]
+
+
+Processing StylesheetsController#content to css (for 127.0.0.1 at 2009-04-15 05:30:21) [GET]
+  Parameters: {"format"=>"css", "action"=>"content", "controller"=>"stylesheets"}
+  [4;36;1mCmsPage Load (0.3ms)[0m   [0;1mSELECT * FROM "cms_pages" WHERE ("cms_pages"."reference_string" = 'Stylesheets: Content') LIMIT 1[0m
+Rendering stylesheets/content
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/stylesheets/content.css]
