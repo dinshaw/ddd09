@@ -9,7 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090415192715) do
+ActiveRecord::Schema.define(:version => 20090416034133) do
+
+  create_table "admin_glossary_terms", :force => true do |t|
+    t.string   "term"
+    t.text     "definition"
+    t.integer  "position"
+    t.integer  "parent_id",  :default => 0,     :null => false
+    t.boolean  "common",     :default => false, :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "cms_pages", :force => true do |t|
     t.string   "reference_string"
@@ -31,6 +41,16 @@ ActiveRecord::Schema.define(:version => 20090415192715) do
     t.string   "value"
     t.integer  "position"
     t.boolean  "sys_var",    :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "glossary_terms", :force => true do |t|
+    t.string   "term"
+    t.text     "definition"
+    t.integer  "position"
+    t.integer  "parent_id"
+    t.boolean  "common"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -87,6 +107,18 @@ ActiveRecord::Schema.define(:version => 20090415192715) do
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "slugs", :force => true do |t|
+    t.string   "name"
+    t.integer  "sluggable_id"
+    t.integer  "sequence",                     :default => 1, :null => false
+    t.string   "sluggable_type", :limit => 40
+    t.string   "scope",          :limit => 40
+    t.datetime "created_at"
+  end
+
+  add_index "slugs", ["name", "sluggable_type", "scope", "sequence"], :name => "index_slugs_on_name_and_sluggable_type_and_scope_and_sequence", :unique => true
+  add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
 
   create_table "taggings", :force => true do |t|
     t.integer "tag_id"

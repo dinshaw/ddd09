@@ -7,5 +7,11 @@ class Project < ActiveRecord::Base
     }
     
   default_scope :order => :position
-  named_scope :featured, :conditions => { :featured => true }
+  named_scope :featured, :conditions => { :featured => true }, :order => 'featured_on desc'
+  
+  before_save :stamp_featured
+
+  def stamp_featured
+    self.featured_on = Time.now if self.featured_changed?
+  end
 end

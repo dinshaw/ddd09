@@ -7,7 +7,13 @@ class CmsPage < ActiveRecord::Base
   validates_uniqueness_of :path
   
   def self.get(reference_string)
-    find_by_reference_string(reference_string) || self.new(:title => reference_string, :sub_title => "CMS Page Missing  - #{reference_string}")
+    find_by_reference_string(reference_string) || self.new(:title => reference_string, :sub_title => "CMS Page Missing  - #{reference_string}", :path => '')
+  end
+  
+  def is_current?(uri)
+    logger.error("uri = "+uri)
+    logger.error("path = "+self.path)
+    self.path.blank? ? false : uri.match(self.path) || uri.match((self.parent.path rescue "-"))
   end
   
 end

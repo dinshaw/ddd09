@@ -4,12 +4,13 @@
   <tr>
     <th>Reference string</th>
     <th>Title</th>
+    <th colspan="3">Action</th>
   </tr>
 
 <% @cms_pages.each do |cms_page| %>
-  <tr>
-    <td><%=h cms_page.reference_string %></td>
-    <td><%=h cms_page.title %></td>
+  <tr class="<%= cycle "even", "odd" %>">
+    <td><strong><%=h cms_page.reference_string %></strong></td>
+    <td><%= cms_page.title %></td>
     <td><%= link_to 'Show', admin_cms_page_path(cms_page) %></td>
     <td><%= link_to 'Edit', edit_admin_cms_page_path(cms_page) %></td>
     <td><%= link_to 'Destroy', admin_cms_page_path(cms_page), :confirm => 'Are you sure?', :method => :delete %></td>

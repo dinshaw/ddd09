@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   filter_parameter_logging :password, :confirm_password
 
   before_filter :get_cms_page, :nav_items
-  before_filter :process_nav_items
+  before_filter :process_nav_items 
 
   def get_cms_page
     controller = self.controller_name.titleize
@@ -32,27 +32,24 @@ class ApplicationController < ActionController::Base
 
   def nav_items
     @nav_items ||= [
-      ['Home',root_path,'first'],
+      ['Home',home_path,'first'],
       ['Projects',projects_path,''],
       ['Bio & Resume',bio_path,''],
       ['Process',process_path,''],
       ['Enterprise',enterprise_path,''],
       ['pcgi.it',pcgi_path,'last']
-    ].each{ |nav| nav[2] += ' current' if request.request_uri == nav[1] }
-  end
+      ]
+    @nav_items.each{ |nav| nav[2] += ' current' if @cms_page.is_current?(nav[1]) } if !@cms_page.nil?
+end
+
+def process_nav_items
   
-  def process_nav_items
-    paths = [@cms_page.path] + @cms_page.children.collect{|cms| cms.path }
-    logger.error paths.inspect
-    logger.error self.action_name
-    if paths.include?(self.action_name)
-    @process_nav_items ||= [
-      ['Free Consultation',free_consultation_path,'first'],
-      ['Discovery',discovery_path,''],
-      ['Design',design_path,''],
-      ['Development',development_path,''],
-      ['QA',quality_assurance_path,'last']
-    ].each{|nav| nav[2] += ' current' if request.request_uri == nav[1] }
-  end
+  @process_nav_items ||= [
+    ['Free Consultation',free_consultation_path,'first'],
+    ['Discovery',discovery_path,''],
+    ['Design',design_path,''],
+    ['Development',development_path,''],
+    ['QA',quality_assurance_path,'last']
+    ].each{|nav| nav[2] += ' current' if @cms_page.is_current?(nav[1]) } if !@cms_page.nil? && @cms_page.is_current?('process')
   end
 end

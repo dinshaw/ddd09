@@ -1,0 +1,11 @@
+<p><%= link_to 'Show', ['admin', @glossary_term] %> | <%= link_to 'Back', admin_glossary_terms_path %></p>
+
+<% form_for(['admin', @glossary_term]) do |f| %>
+  <%= f.error_messages %>
+
+  	<%= render :partial => "term_fields", :locals => { :f => f } %>
+  <p>
+    <%= f.submit 'Update', :class => :new %>
+  </p>
+<% end %>
+

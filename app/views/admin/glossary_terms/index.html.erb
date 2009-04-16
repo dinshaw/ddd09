@@ -1,0 +1,22 @@
+<p><%= link_to 'New Glossary Term', new_admin_glossary_term_path %></p>
+<table>
+  <tr>
+    <th>Term</th>
+    <th>Common</th>
+    <th colspan="4">Action</th>
+  </tr>
+
+<% @glossary_terms.each do |glossary_term| %>
+  <tr class="<%= cycle "even", "odd" %>">
+    <td><%=h glossary_term.term %></td>
+    <td><%=h is glossary_term.common %></td>
+	<td><%= link_to 'Up', up_admin_glossary_term_path(glossary_term), :method => :get %> / <%= link_to 'Down', down_admin_glossary_term_path(glossary_term), :method => :get %></td>
+    <td><%= link_to 'Show', admin_glossary_term_path(glossary_term) %></td>
+    <td><%= link_to 'Edit', edit_admin_glossary_term_path(glossary_term) %></td>
+    <td><%= link_to 'Destroy', admin_glossary_term_path(glossary_term), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+
+

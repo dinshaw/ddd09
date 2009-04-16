@@ -12,7 +12,8 @@ Rails::Initializer.run do |config|
   config.gem 'mislav-will_paginate', :lib => 'will_paginate', :source => 'http://gems.github.com'
   config.gem 'prawn', :source => 'http://gems.github.com'
   config.gem 'chronic', :source => 'http://gems.github.com'
-  config.gem 'RedCloth', :lib => 'redcloth'
+  # config.gem 'RedCloth', :lib => 'redcloth'
+  config.gem 'ryanb-acts-as-list', :lib => 'acts_as_list', :source => 'http://gems.github.com'  
   config.gem 'hpricot', :source => 'http://code.whytheluckystiff.net'
   config.gem 'sqlite3-ruby', :lib => 'sqlite3'
   config.gem "friendly_id"
@@ -50,3 +51,4 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
 end
 require 'friendly_id'
+require 'redcloth'

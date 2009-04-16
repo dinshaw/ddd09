@@ -1,0 +1,2 @@
+module Admin::GlossaryTermsHelper
+end

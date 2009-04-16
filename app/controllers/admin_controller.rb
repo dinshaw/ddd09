@@ -8,7 +8,8 @@ class AdminController < ApplicationController
   def nav_items
     @nav_items ||= [
       ['CMS Pages',admin_cms_pages_path,'first'], 
-      ['Projects',admin_projects_path,'last']
+      ['Projects',admin_projects_path,''],
+      ['Glossary',admin_glossary_terms_path,'last']
     ]
   end
 end

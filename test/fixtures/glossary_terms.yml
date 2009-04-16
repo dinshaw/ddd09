@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  term: MyString
+  definition: MyText
+  position: 1
+  parent_id: 1
+  common: false
+
+two:
+  term: MyString
+  definition: MyText
+  position: 1
+  parent_id: 1
+  common: false

@@ -1,0 +1,18 @@
+<div class="content-section">
+	<ul class="glossary-terms" id="glossary-left"> 
+	<% 
+	@glossary_terms.each_with_index do |term,i|
+		content = link_to(term.term, "#glossary_term_#{term.id}")
+		content = term.common? ? ["<span>*</span> ",content].join : content
+	%>
+	<%= content_tag :li, content %>
+	<%- if i-2 == @glossary_terms.size/2 -%>
+		</ul>
+		<ul class="glossary-terms">
+	<%- end -%>
+	<% end %>
+</ul>
+<br class="clear" />
+</div>
+<%= render @glossary_terms %>
+
