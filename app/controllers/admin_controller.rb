@@ -9,7 +9,8 @@ class AdminController < ApplicationController
     @nav_items ||= [
       ['CMS Pages',admin_cms_pages_path,'first'], 
       ['Projects',admin_projects_path,''],
-      ['Glossary',admin_glossary_terms_path,'last']
+      ['Glossary',admin_glossary_terms_path,''],
+      ['Designers',admin_designers_path,'last']
     ]
   end
 end

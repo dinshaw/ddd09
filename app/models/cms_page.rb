@@ -11,8 +11,6 @@ class CmsPage < ActiveRecord::Base
   end
   
   def is_current?(uri)
-    logger.error("uri = "+uri)
-    logger.error("path = "+self.path)
     self.path.blank? ? false : uri.match(self.path) || uri.match((self.parent.path rescue "-"))
   end
   

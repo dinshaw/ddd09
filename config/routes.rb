@@ -1,4 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :designers, :only => [:index]
   map.resources :projects, :only => [:show, :index]
   map.resources :glossary_terms, :only => [:show, :index] 
   
@@ -29,6 +30,7 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :admin do |admin|
     admin.resources :cms_pages, :config_values, :projects
     admin.resources :glossary_terms, :member => { :up => :get, :down => :get }
+    admin.resources :designers, :member => { :up => :get, :down => :get }    
   end
   
   map.connect ':controller/:action/:id'

@@ -1,0 +1,11 @@
+<p><%= link_to 'Show', ['admin', @designer] %> | <%= link_to 'Back', admin_designers_path %></p>
+
+<% form_for(['admin', @designer], :html => { :multipart => true }) do |f| %>
+  <%= f.error_messages %>
+
+ <%= render :partial => 'designer_fields', :locals => { :f =>  f } %>
+  <p>
+    <%= f.submit 'Update', :class => :btn %>
+  </p>
+<% end %>
+

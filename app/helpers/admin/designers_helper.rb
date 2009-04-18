@@ -1,0 +1,2 @@
+module Admin::DesignersHelper
+end

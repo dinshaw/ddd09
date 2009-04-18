@@ -45,7 +45,7 @@
 				<%- if !@cms_page.sub_title.blank? -%><%= link_to_unless @cms_page.sub_title_url.blank?, textilize(@cms_page.sub_title), @cms_page.sub_title_url %><%- end -%>
 
 				<div id="content-main">
-					<%=textilize @cms_page.body -%>
+					<%=dddt @cms_page.body -%>
 					<%= yield %>
 				</div> <!-- content-main -->
 				

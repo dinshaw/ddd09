@@ -1,0 +1,6 @@
+<% div_for designer, :class => "content-section designer" do %>
+<h1><%= designer.name %> <%= content_tag :span, "[#{link_to('Resume',designer.resume.url)}]", :class => :note if designer.resume.file? %></h1>
+<h2><%= link_to designer.company_name, designer.url, :class => :external %></h2>
+<p class="url"><%= link_to designer.url, designer.url, :class => :external %></p>
+<%=textilize designer.description %>
+<% end %>

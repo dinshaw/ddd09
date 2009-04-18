@@ -24,22 +24,36 @@ module ApplicationHelper
   def page_title
     [h(SITE_NAME),"|",@cms_page.title].join(" ")
   end
-  
+
   def flash_block
     if [!flash[:message].blank?,!flash[:notice].blank?,!flash[:error].blank?].any?
       "<p id=\"flash\">#{flash[:notice]}#{flash[:error]}#{flash[:message]}</p>" 
     end
   end
-  
+
   def main_nav(nav_items=@nav_items)
-    nav_items.enum_with_index.map{ |ni,i|
-			content_tag :li, link_to(ni[0],ni[1]), :class => ni[2]
-		}.join("\n")
+    nav_items.enum_with_index.map do |ni,i|
+      content_tag :li, link_to(ni[0],ni[1]), :class => ni[2]
+    end.join("\n")
   end
-  
+
   def is(value)
     value ? "Yes" : "No"
   end
+
+
+  def dddt(text)
+    if text.blank?
+      text
+    else
+      terms = GlossaryTerm.all.map{ |gt| gt.term }
+      match = Array(terms).map{ |p| Regexp.escape(p) }.join('|')
+      textilize(text).gsub(/(#{match})(?!(?:[^<]*?)?(?:["'])[^<>]*>)/i) do |m| 
+      link_to m, glossary_terms_path( :anchor => "glossary_term_#{GlossaryTerm.find_by_term(m).id}" ), :class => :info
+    end
+  end
+end
+
 end
 
 

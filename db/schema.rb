@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090416034133) do
+ActiveRecord::Schema.define(:version => 20090418142739) do
 
   create_table "admin_glossary_terms", :force => true do |t|
     t.string   "term"
@@ -41,6 +41,24 @@ ActiveRecord::Schema.define(:version => 20090416034133) do
     t.string   "value"
     t.integer  "position"
     t.boolean  "sys_var",    :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "designers", :force => true do |t|
+    t.string   "name"
+    t.string   "company_name"
+    t.integer  "price_point"
+    t.string   "url"
+    t.text     "description"
+    t.string   "phone"
+    t.string   "email"
+    t.string   "resume_file_name"
+    t.integer  "resume_file_size"
+    t.string   "resume_content_type"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

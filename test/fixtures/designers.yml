@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  url: MyString
+  description: MyText
+  phone: MyString
+  email: MyString
+  resume_file_name: MyString
+  resume_file_size: 1
+  resume_content_type: MyString
+  photo_file_name: MyString
+  photo_content_type: MyString
+  photo_file_size: 1
+
+two:
+  name: MyString
+  url: MyString
+  description: MyText
+  phone: MyString
+  email: MyString
+  resume_file_name: MyString
+  resume_file_size: 1
+  resume_content_type: MyString
+  photo_file_name: MyString
+  photo_content_type: MyString
+  photo_file_size: 1

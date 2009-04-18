@@ -1,0 +1,27 @@
+<p><%= link_to 'New designer', new_admin_designer_path %></p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Company</th>
+    <th>Phone</th>
+    <th>Resume</th>
+    <th>Photo</th>
+	<th colspan="3">Actions</th>
+  </tr>
+
+<% @designers.each do |designer| %>
+  <tr>
+    <td><%= link_to designer.name, designer.email %></td>
+    <td><%= link_to designer.company_name, designer.url %></td>
+    <td><%=h designer.phone %></td>
+    <td><%= link_to("Resume", designer.resume.url) if designer.resume.file? %></td>
+    <td><%= image_tag designer.photo.url(:thumb) %></td>
+    <td><%= link_to 'Show', admin_designer_path(designer) %></td>
+    <td><%= link_to 'Edit', edit_admin_designer_path(designer) %></td>
+    <td><%= link_to 'Destroy', admin_designer_path(designer), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+
+
