@@ -1,20 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :employers, :path_prefix => 'admin', :name_prefix => 'admin_', :controller => 'admin/employers'
+
   map.resources :designers, :only => [:index]
   map.resources :projects, :only => [:show, :index]
-  map.resources :glossary_terms, :only => [:show, :index] 
-  
+  map.glossary_terms '/what-does-it-take-to-build-a-web-site', :controller => "glossary_terms"
+    
   map.root :controller => 'public', :action => 'home'
-  map.home "home", :controller => 'public', :action => 'home'  
-  map.bio "bio", :controller => 'public', :action => 'bio'
-  map.process "process", :controller => 'public', :action => 'my_process'
-  map.enterprise "enterprise", :controller => 'public', :action => 'enterprise'    
-  map.pcgi "pcgi", :controller => 'public', :action => 'pcgi'
-  map.development "development", :controller => 'public', :action => 'development'
-  map.free_consultation "free_consultation", :controller => 'public', :action => 'free_consultation'
-  map.discovery "discovery", :controller => 'public', :action => 'discovery'
-  map.quality_assurance "quality_assurance", :controller => 'public', :action => 'quality_assurance'
-  map.design "design", :controller => 'public', :action => 'design'            
-  
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
@@ -36,4 +27,6 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action.:format'
   map.connect ':controller/:action/:id.:format'
+  # catch for cms pages
+  map.connect '/:action', :controller => "public"
 end

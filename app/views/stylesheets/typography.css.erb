@@ -5,7 +5,7 @@ body {
 	font-size:80%;
 	font-family: Verdana,Georgia, Arial, sans-serif;
 	line-height:1.4em;
-	color:<%= @text_main %>;
+	color:<%= @text %>;
 }
 
 /* =Links */
@@ -17,6 +17,7 @@ a{
 a:hover{
 	color:<%= @text %>;
 	border-bottom:1px solid <%= @text %>;
+	background-color:<%= @link_hover_bg %>;
 }
 
 h1, h2, h3,h4,h5,h6 {

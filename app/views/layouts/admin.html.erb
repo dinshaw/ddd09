@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<title><%= page_title %></title>
-	<%= javascript_include_tag 'jquery', 'jquery.autocomplete', 'application' %>
+	<%= javascript_include_tag 'jquery', 'jquery.autocomplete','application' %>
 	<%= stylesheet_link_tag 'reset', 'layout', 'typography', 'content', 'nav', 'tables', 'forms', 'autocomplete', 'admin' %>
 </head>
 
@@ -33,6 +33,7 @@
 			<div id="content">
 
 				<h1><%= @cms_page.title %></h1>
+				<%= textilize @cms_page.sub_title -%>
 
 				<div id="content-main">
 					<%= flash_block %>
@@ -49,7 +50,7 @@
 	</div> <!-- wrapper -->
 
 	<div id="footer">
-		<p>all content &copy; copyright <%= Date.today.year %> dinshaw design &amp; development. all rights reserved. <%= link_to "CSS 2.1" %> | <%= link_to "XHTML 1.0 Strict" %> | <%= link_to "login", login_path %></p>
+		<p>all content &copy; copyright <%= Date.today.year %> dinshaw design &amp; development. all rights reserved. <%= link_to "CSS 2.1" %> | <%= link_to "XHTML 1.0 Strict" %> | <%= logged_in? ? link_to("Logout", logout_path) : link_to("Login", login_path)%></p>
 	</div> <!-- footer -->
 
 </body>

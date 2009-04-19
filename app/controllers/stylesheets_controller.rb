@@ -24,6 +24,7 @@ class StylesheetsController < ApplicationController
     @dark_green = '#336e00'
     @error = 'red'
     @light_grey = '#e1e1e1'
+    @link_hover_bg = '#e2e5ee'
   end
   
   def size

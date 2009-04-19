@@ -1,4 +1,2 @@
 <p><%= link_to 'Edit', edit_admin_cms_page_path(@cms_page) %> | <%= link_to 'Back', admin_cms_pages_path %></p>
-<h1><%= @cms_page.title %></h1>
-<%=textilize(@cms_page.sub_title) if !@cms_page.sub_title.blank? %>
 <%=textilize @cms_page.body -%>

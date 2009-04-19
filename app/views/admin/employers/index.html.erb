@@ -1,0 +1,16 @@
+<p><%= link_to 'New employer', new_admin_employer_path %></p>
+<table>
+  <tr>
+    <th>Company name</th>
+    <th colspan="3">Actions</th>
+  </tr>
+
+<% @employers.each do |employer| %>
+  <tr class="<%= cycle "even", "odd" %>">
+    <td><%=h employer.company_name %></td>
+    <td><%= link_to 'Show', admin_employer_path(employer) %></td>
+    <td><%= link_to 'Edit', edit_admin_employer_path(employer) %></td>
+    <td><%= link_to 'Destroy', admin_employer_path(employer), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

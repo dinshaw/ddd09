@@ -42,7 +42,7 @@
 			<div id="content">
 
 				<h1><%= @cms_page.title %></h1>
-				<%- if !@cms_page.sub_title.blank? -%><%= link_to_unless @cms_page.sub_title_url.blank?, textilize(@cms_page.sub_title), @cms_page.sub_title_url %><%- end -%>
+				<%= textilize @cms_page.sub_title -%>
 
 				<div id="content-main">
 					<%=dddt @cms_page.body -%>

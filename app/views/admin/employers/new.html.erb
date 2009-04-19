@@ -1,0 +1,11 @@
+<p><%= link_to 'Back', admin_employers_path %></p>
+<% form_for(['admin', @employer]) do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => 'employer_fields', :locals => { :f => f } %>
+  <p>
+    <%= f.submit 'Create', :class => :btn %>
+  </p>
+<% end %>
+
+
+

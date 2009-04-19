@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
 
   def get_cms_page
     controller = self.controller_name.titleize
-    # Admin user shoudl not need to differentiate between edit / update and new / create
+    # Admin user should not need to differentiate between edit / update and new / create
     action = case self.action_name
     when "create"
       "New"
@@ -32,12 +32,13 @@ class ApplicationController < ActionController::Base
 
   def nav_items
     @nav_items ||= [
-      ['Home',home_path,'first'],
-      ['Projects',projects_path,''],
-      ['Bio & Resume',bio_path,''],
-      ['Process',process_path,''],
-      ['Enterprise',enterprise_path,''],
-      ['pcgi.it',pcgi_path,'last']
+      ['Home','/home','first'],
+      ['Projects','/projects',''],
+      ['Bio & Resume','/bio',''],
+      ['Process','/my_process',''],
+      ['Enterprise','/enterprise',''],
+      ['pcgi.it','/pcgi',''],
+      ['Contact','/contact','last']      
       ]
     @nav_items.each{ |nav| nav[2] += ' current' if @cms_page.is_current?(nav[1]) } if !@cms_page.nil?
 end
@@ -45,11 +46,11 @@ end
 def process_nav_items
   
   @process_nav_items ||= [
-    ['Free Consultation',free_consultation_path,'first'],
-    ['Discovery',discovery_path,''],
-    ['Design',design_path,''],
-    ['Development',development_path,''],
-    ['QA',quality_assurance_path,'last']
+    ['Free Consultation','/free_consultation','first'],
+    ['Discovery','/discovery',''],
+    ['Design','/design',''],
+    ['Development','/development',''],
+    ['QA','/quality_assurance','last']
     ].each{|nav| nav[2] += ' current' if @cms_page.is_current?(nav[1]) } if !@cms_page.nil? && @cms_page.is_current?('process')
   end
 end

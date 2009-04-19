@@ -25,3 +25,6 @@ $(function(){
 		return false;
 	});
 });
+
+// email obfuscation
+$('span.email').nospam();

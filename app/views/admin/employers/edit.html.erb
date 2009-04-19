@@ -1,0 +1,11 @@
+<p><%= link_to 'Show', ['admin', @employer] %> | <%= link_to 'Back', admin_employers_path %></p>
+
+<% form_for(['admin', @employer]) do |f| %>
+  <%= f.error_messages %>
+
+  <%= render :partial => 'employer_fields', :locals => { :f => f } %>
+  <p>
+    <%= f.submit 'Update', :class => :btn %>
+  </p>
+<% end %>
+

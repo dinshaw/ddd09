@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  company_name: MyString
+  from: 2009-04-19
+  until: 2009-04-19
+  title: MyString
+  description: MyText
+
+two:
+  company_name: MyString
+  from: 2009-04-19
+  until: 2009-04-19
+  title: MyString
+  description: MyText
