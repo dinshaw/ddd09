@@ -4,6 +4,7 @@ class PublicController < ApplicationController
   end
   
   def bio
+    @no_term_links = true
     @employers = Employer.all
   end
   

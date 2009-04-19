@@ -45,7 +45,7 @@
 				<%= textilize @cms_page.sub_title -%>
 
 				<div id="content-main">
-					<%=dddt @cms_page.body -%>
+					<%= @no_term_links ? textilize(@cms_page.body) : dddt(@cms_page.body) -%>
 					<%= yield %>
 				</div> <!-- content-main -->
 				
