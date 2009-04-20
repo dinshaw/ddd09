@@ -5,7 +5,7 @@ config/database.yml
 config/deploy.rb
 *.swp
 public/system
-public/stylesheets
+public/stylesheets/*
 db/sphinx
 db/schema.rb
 config/initializers/site_keys.rb
