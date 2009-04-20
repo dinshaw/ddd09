@@ -44,6 +44,7 @@ class Admin::DesignersController < AdminController
 
     respond_to do |format|
       if @designer.save
+        expire_page "/designers"
         flash[:notice] = 'Designer was successfully created.'
         format.html { redirect_to(['admin', @designer]) }
         format.xml  { render :xml => @designer, :status => :created, :location => ['admin', @designer] }
@@ -61,6 +62,7 @@ class Admin::DesignersController < AdminController
 
     respond_to do |format|
       if @designer.update_attributes(params[:designer])
+        expire_page "/designers"
         flash[:notice] = 'Designer was successfully updated.'
         format.html { redirect_to(['admin', @designer]) }
         format.xml  { head :ok }

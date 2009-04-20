@@ -1,0 +1,33 @@
+label{
+	display:block;
+	margin-bottom:3px;
+	color:#671204;
+}
+input, textarea{
+	border:1px solid ;
+	padding:6px 8px;
+	margin-bottom:20px;
+	font:1em helvetica, sans-serif;
+	color:#343232;
+}
+
+.btn{
+	background-color:#671204;
+	color:#fff;
+}
+.btn:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:500px;
+	height:300px;
+}
+textarea.large{
+	width:800px;
+	height:300px;
+}
+textarea.small{
+	width:500px;
+	height:100px;
+}

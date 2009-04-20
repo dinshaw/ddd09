@@ -45,6 +45,7 @@ class Admin::CmsPagesController < AdminController
 
     respond_to do |format|
       if @cms_page.save
+        expire_page "/#{@cms_page.path}"        
         flash[:notice] = 'CmsPage was successfully created.'
         format.html { redirect_to(['admin', @cms_page]) }
         format.xml  { render :xml => @cms_page, :status => :created, :location => ['admin', @cms_page] }
@@ -62,10 +63,12 @@ class Admin::CmsPagesController < AdminController
     params[:cms_page][:parent_id] = 0 if params[:cms_page][:parent_id].blank?
     respond_to do |format|
       if @cms_page.update_attributes(params[:cms_page])
+        expire_page "/#{@cms_page.path}"
         flash[:notice] = 'CMS Page was successfully updated.'
         format.html { redirect_to(['admin', @cms_page]) }
         format.xml  { head :ok }
       else
+
         format.html { render :action => "edit" }
         format.xml  { render :xml => @cms_page.errors, :status => :unprocessable_entity }
       end

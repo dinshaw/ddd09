@@ -6,7 +6,7 @@ class CmsPage < ActiveRecord::Base
   validates_presence_of :path
   validates_uniqueness_of :path
   
-  default_scope :order => :title
+  default_scope :order => :reference_string
   
   def self.get(reference_string)
     find_by_reference_string(reference_string) || self.new(:title => reference_string, :sub_title => "CMS Page Missing  - #{reference_string}", :path => '')

@@ -63,6 +63,9 @@ class Admin::GlossaryTermsController < AdminController
     
     respond_to do |format|
       if @glossary_term.update_attributes(params[:glossary_term])
+        
+        expire_page "/what-does-it-take-to-build-a-web-site"
+        
         flash[:notice] = 'GlossaryTerm was successfully updated.'
         format.html { redirect_to(['admin', @glossary_term]) }
         format.xml  { head :ok }

@@ -37,7 +37,7 @@ class ApplicationController < ActionController::Base
       ['Bio & Resume','/bio',''],
       ['Process','/my_process',''],
       ['Enterprise','/enterprise',''],
-      ['pcgi.it','/pcgi',''],
+      # ['pcgi.it','/pcgi',''],
       ['Contact','/contact','last']      
       ]
     @nav_items.each{ |nav| nav[2] += ' current' if @cms_page.is_current?(nav[1]) } if !@cms_page.nil?

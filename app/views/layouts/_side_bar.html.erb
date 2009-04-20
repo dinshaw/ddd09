@@ -4,17 +4,17 @@
 		<p><%= link_to "Click here for some basic info", glossary_terms_path %> about web sites and what it takes to build one.</p>
 	</div>
 	<div class="content-section">
-		<%= link_to image_tag("ror.gif"), '/' %>
+		<%= link_to image_tag("ror.gif"), 'http://www.rubyonrails.org', :class => "external-img" %>
 		<h3>Ruby On Rails</h3>
 		<p>RoR / *NIX is my preferred development platform.</p>
 	</div>
 	<div class="content-section">
 		<%= link_to image_tag("pcgi.gif"), '/' %>
 		<h3>PCGI Member</h3>
-		<p>...and I built and maintain the <%= link_to "PCGI.it" %> web site.</p>
+		<p>...and I built and maintain the <%= link_to "PCGI.it", 'http://pcgi.it', :class => :external %> web site.</p>
 	</div>
-	<div class="content-section">
-		<h3><%= link_to "Railsnstuff.com" %></h3>
+	<!-- <div class="content-section">
+		<h3><%= link_to "Railsnstuff.com", "http://railsnstuff.com", :class => :external %></h3>
 		<p>My blog about Ruby On Rails tricks and other stuff i have learned along the way.</p>
-	</div>
+	</div> -->
 </div> <!-- side-bar -->
