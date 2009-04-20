@@ -34,7 +34,7 @@ class ApplicationController < ActionController::Base
     @nav_items ||= [
       ['Home','/home','first'],
       ['Projects','/projects',''],
-      ['Bio & Resume','/bio',''],
+      ['Bio &amp; Resume','/bio',''],
       ['Process','/my_process',''],
       ['Enterprise','/enterprise',''],
       # ['pcgi.it','/pcgi',''],

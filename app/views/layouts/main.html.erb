@@ -16,9 +16,6 @@
 				<ul>
 					<li>646.239.8325 <%= mail_to "info@dinshawdesign.com" %></li>
 					<li>dinshawg (Skype) gobyrock (AIM)</li>
-					<%- if logged_in? && current_user.has_role?('superuser') -%>
-					<li><%= link_to "Admin Area", admin_cms_pages_path %></li>
-					<%- end -%>
 				</ul>
 			</div>
 			<%= link_to image_tag("logo.gif"), root_path, :id => :logo %>

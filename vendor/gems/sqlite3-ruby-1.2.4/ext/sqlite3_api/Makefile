@@ -4,55 +4,58 @@ SHELL = /bin/sh
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /opt/local/lib/ruby/1.8/i686-darwin9.2.2
+topdir = /usr/local/lib/ruby/1.8/i686-darwin8.8.5
 hdrdir = $(topdir)
 VPATH = $(srcdir):$(topdir):$(hdrdir)
-prefix = $(DESTDIR)/opt/local
-exec_prefix = $(prefix)
+prefix = $(DESTDIR)/usr/local
+exec_prefix = $(DESTDIR)/usr/local
 sitedir = $(prefix)/lib/ruby/site_ruby
 rubylibdir = $(libdir)/ruby/$(ruby_version)
+docdir = $(datarootdir)/doc/$(PACKAGE)
+dvidir = $(docdir)
+datarootdir = $(prefix)/share
 archdir = $(rubylibdir)/$(arch)
 sbindir = $(exec_prefix)/sbin
-vendordir = $(prefix)/lib/ruby/vendor_ruby
-datadir = $(prefix)/share
+psdir = $(docdir)
+localedir = $(datarootdir)/locale
+htmldir = $(docdir)
+datadir = $(datarootdir)
 includedir = $(prefix)/include
-infodir = $(prefix)/info
+infodir = $(datarootdir)/info
 sysconfdir = $(prefix)/etc
-mandir = $(DESTDIR)/opt/local/share/man
-libdir = $(exec_prefix)/lib
+mandir = $(datarootdir)/man
+libdir = $(DESTDIR)/usr/local/lib
 sharedstatedir = $(prefix)/com
 oldincludedir = $(DESTDIR)/usr/include
+pdfdir = $(docdir)
 sitearchdir = $(sitelibdir)/$(sitearch)
-vendorarchdir = $(vendorlibdir)/$(vendorarch)
 bindir = $(exec_prefix)/bin
 localstatedir = $(prefix)/var
-vendorlibdir = $(vendordir)/$(ruby_version)
 sitelibdir = $(sitedir)/$(ruby_version)
 libexecdir = $(exec_prefix)/libexec
 
 CC = gcc
-LIBRUBY = $(LIBRUBY_SO)
+LIBRUBY = $(LIBRUBY_A)
 LIBRUBY_A = lib$(RUBY_SO_NAME)-static.a
-LIBRUBYARG_SHARED = -l$(RUBY_SO_NAME)
+LIBRUBYARG_SHARED = 
 LIBRUBYARG_STATIC = -l$(RUBY_SO_NAME)-static
 
 RUBY_EXTCONF_H = 
-CFLAGS   =  -fno-common -O2  -fno-common -pipe -fno-common 
-INCFLAGS = -I. -I. -I/opt/local/lib/ruby/1.8/i686-darwin9.2.2 -I.
-CPPFLAGS = -DHAVE_SQLITE3_H -I/usr/local/include -I/opt/local/include
+CFLAGS   =  -fno-common -g -O2 -pipe -fno-common 
+INCFLAGS = -I. -I. -I/usr/local/lib/ruby/1.8/i686-darwin8.8.5 -I.
+CPPFLAGS = -DHAVE_SQLITE3_H -I/usr/local/include 
 CXXFLAGS = $(CFLAGS) 
-DLDFLAGS = -L. -L/opt/local/lib  
+DLDFLAGS =   
 LDSHARED = cc -dynamic -bundle -undefined suppress -flat_namespace
 AR = ar
 EXEEXT = 
 
 RUBY_INSTALL_NAME = ruby
 RUBY_SO_NAME = ruby
-arch = i686-darwin9.2.2
-sitearch = i686-darwin9.2.2
-vendorarch = i686-darwin9.2.2
+arch = i686-darwin8.8.5
+sitearch = i686-darwin8.8.5
 ruby_version = 1.8
-ruby = /opt/local/bin/ruby
+ruby = /usr/local/bin/ruby
 RUBY = $(ruby)
 RM = rm -f
 MAKEDIRS = mkdir -p
@@ -65,18 +68,18 @@ COPY = cp
 
 preload = 
 
-libpath = . $(libdir) /usr/local/lib
-LIBPATH =  -L"." -L"$(libdir)" -L"/usr/local/lib"
+libpath = $(libdir) /usr/local/lib
+LIBPATH =  -L"$(libdir)" -L"/usr/local/lib"
 DEFFILE = 
 
-CLEANFILES = mkmf.log
+CLEANFILES = 
 DISTCLEANFILES = 
 
 extout = 
 extout_prefix = 
 target_prefix = 
 LOCAL_LIBS = 
-LIBS = $(LIBRUBYARG_SHARED) -lsqlite3  -lpthread -ldl -lobjc  
+LIBS =  -lsqlite3  -lpthread -ldl -lobjc  
 SRCS = sqlite3_api_wrap.c
 OBJS = sqlite3_api_wrap.o
 TARGET = sqlite3_api
@@ -85,8 +88,8 @@ EXTSTATIC =
 STATIC_LIB = 
 
 RUBYCOMMONDIR = $(sitedir)$(target_prefix)
-RUBYLIBDIR    = $(sitelibdir)$(target_prefix)
-RUBYARCHDIR   = $(sitearchdir)$(target_prefix)
+RUBYLIBDIR = /Users/dinshaw/sites/ddd/ddd09/vendor/gems/sqlite3-ruby-1.2.4/lib$(target_prefix)
+RUBYARCHDIR = /Users/dinshaw/sites/ddd/ddd09/vendor/gems/sqlite3-ruby-1.2.4/lib$(target_prefix)
 
 TARGET_SO     = $(DLLIB)
 CLEANLIBS     = $(TARGET).bundle $(TARGET).il? $(TARGET).tds $(TARGET).map
@@ -139,7 +142,7 @@ site-install-rb: install-rb
 
 $(DLLIB): $(OBJS)
 	@-$(RM) $@
-	$(LDSHARED) -o $@ $(OBJS) $(LIBPATH) $(DLDFLAGS) $(LOCAL_LIBS) $(LIBS)
+	$(LDSHARED) $(DLDFLAGS) $(LIBPATH) -o $@ $(OBJS) $(LOCAL_LIBS) $(LIBS)
 
 
 

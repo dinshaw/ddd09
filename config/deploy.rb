@@ -17,6 +17,7 @@ default_run_options[:pty] = true
 set :repository, "git@github.com:dinshaw/ddd09.git"  # The repository location for git
 set :scm, :git
 set :branch, "master"
+set :git_enable_submodules, 1 
 
 set :use_sudo, false                	# HostingRails users don't have sudo access
 set :deploy_to, "/home/#{user}/#{application}"          # Where on the server your app will be deployed

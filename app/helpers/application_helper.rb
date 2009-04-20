@@ -33,7 +33,8 @@ module ApplicationHelper
 
   def main_nav(nav_items=@nav_items)
     nav_items.enum_with_index.map do |ni,i|
-      content_tag :li, link_to(ni[0],ni[1]), :class => ni[2]
+      options = {:class => ni[2]} if !ni[2].blank?
+      content_tag :li, link_to(ni[0],ni[1]), options
     end.join("\n")
   end
 

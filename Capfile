@@ -92,7 +92,7 @@ namespace :deploy do
   desc "Make sym link for user content and sphinx db"
   task :make_sym_links_for_user_content do
     run "ln -s  #{shared_path}/db/sphinx #{release_path}/db/sphinx"    
-    run "ln -s  #{shared_path}/public/system #{release_path}/public/system"        
+    # run "ln -s  #{shared_path}/public/system #{release_path}/public/system"        
   end
   after "deploy:update_code", "deploy:make_sym_links_for_user_content"
   
