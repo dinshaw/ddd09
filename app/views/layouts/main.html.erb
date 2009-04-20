@@ -55,9 +55,8 @@
 		<div id="push"></div> <!-- needed for footer placement -->
 
 	</div> <!-- wrapper -->
-
 	<div id="footer">
-		<p>all content &copy; copyright <%= Date.today.year %> dinshaw design &amp; development. all rights reserved. <%= link_to "CSS 2.1" %> | <%= link_to "XHTML 1.0 Strict" %> | <%= link_to "Login", login_path %></p>
+		<p>all content &copy; copyright <%= Date.today.year %> dinshaw design &amp; development. all rights reserved. <%= link_to "CSS 2.1", "http://jigsaw.w3.org/css-validator/validator?uri=http://dinshawdesign.com#{request.path}&profile=css21&usermedium=all&warning=1&lang=en" %> | <%= link_to "XHTML 1.0 Strict", "http://validator.w3.org/check?uri=http://dinshawdesign.com#{request.path}&charset=(detect+automatically)&doctype=Inline&group=0" %> | <%= link_to "Login", login_path %></p>
 	</div> <!-- footer -->
 
 </body>
