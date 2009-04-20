@@ -26,6 +26,13 @@ RewriteRule .* - [L]
 # Example:
 #   Alias /myrailsapp /path/to/myrailsapp/public
 #   RewriteBase /myrailsapp
+
+# Check for maintenance file and redirect all requests
+RewriteCond %{DOCUMENT_ROOT}/system/maintenance.html -f
+RewriteCond %{REQUEST_URI} !\.(css|jpg|gif|png)$
+RewriteCond %{SCRIPT_FILENAME} !maintenance.html
+RewriteRule ^.*$ /system/maintenance.html [L]
+
 RewriteRule ^$ cache/index.html [QSA]
 RewriteRule ^([^.]+)$ cache/$1.html [QSA]
 RewriteCond %{REQUEST_FILENAME} !-f
