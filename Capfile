@@ -34,13 +34,6 @@ class Capistrano::Configuration
 
 end
 
-# desc "Generate spin script from variables"
-# task :generate_spin_script, :roles => :app do
-#   result = render_erb_template(File.dirname(__FILE__) + "/config/spin.erb")
-#   put result, "#{release_path}/script/spin", :mode => 0755
-# end
-# after "deploy:update_code", "generate_spin_script"
-
 desc "Create mod_rails restart file"
 task :mod_rails_restart, :roles => :app do
     run "touch #{release_path}/tmp/restart.txt"
