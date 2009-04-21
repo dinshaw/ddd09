@@ -51,6 +51,6 @@ def process_nav_items
     ['Design','/design',''],
     ['Development','/development',''],
     ['QA','/quality_assurance','last']
-    ].each{|nav| nav[2] += ' current' if @cms_page.is_current?(nav[1]) } if !@cms_page.nil? && @cms_page.is_current?('process')
+    ].each{|nav| nav[2] += ' current' if @cms_page.is_current?(nav[1]) } if !@cms_page.nil? && @cms_page.is_current?('my_process')
   end
 end

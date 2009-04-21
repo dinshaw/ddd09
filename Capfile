@@ -74,13 +74,6 @@ namespace :deploy do
   end
   after "deploy:setup", "deploy:create_shared_config"
   
-  # desc "git submodule init and update"
-  # task :git_submods do
-  #   run "cd #{release_path}; git submodule init"        
-  #   run "cd #{release_path}; git submodule update"    
-  # end
-  # after "deploy:update_code", "deploy:git_submods"
-  
   # after:update_code
   desc "Copy all config files from shared to release"
   task :copy_config_files do
