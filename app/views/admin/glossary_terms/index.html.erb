@@ -2,7 +2,8 @@
 <table>
   <tr>
     <th>Term</th>
-    <th>Common</th>
+    <th>Common?</th>
+	<th>Definition</th>
     <th colspan="4">Action</th>
   </tr>
 
@@ -10,6 +11,7 @@
   <tr class="<%= cycle "even", "odd" %>">
     <td><%=h glossary_term.term %></td>
     <td><%=h is glossary_term.common %></td>
+    <td><%=h truncate glossary_term.definition %></td>
 	<td><%= link_to 'Up', up_admin_glossary_term_path(glossary_term), :method => :get %> / <%= link_to 'Down', down_admin_glossary_term_path(glossary_term), :method => :get %></td>
     <td><%= link_to 'Show', admin_glossary_term_path(glossary_term) %></td>
     <td><%= link_to 'Edit', edit_admin_glossary_term_path(glossary_term) %></td>

@@ -44,6 +44,7 @@ class Admin::EmployersController < AdminController
 
     respond_to do |format|
       if @employer.save
+        expire_page "/bio"
         flash[:notice] = 'Employer was successfully created.'
         format.html { redirect_to(['admin', @employer]) }
         format.xml  { render :xml => @employer, :status => :created, :location => ['admin', @employer] }
@@ -61,6 +62,7 @@ class Admin::EmployersController < AdminController
 
     respond_to do |format|
       if @employer.update_attributes(params[:employer])
+        expire_page "/bio"
         flash[:notice] = 'Employer was successfully updated.'
         format.html { redirect_to(['admin', @employer]) }
         format.xml  { head :ok }

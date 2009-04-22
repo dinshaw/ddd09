@@ -44,6 +44,7 @@ class Admin::ProjectsController < AdminController
 
     respond_to do |format|
       if @project.save
+        expire_page "/projects"
         flash[:notice] = 'Project was successfully created.'
         format.html { redirect_to(['admin', @project]) }
         format.xml  { render :xml => @project, :status => :created, :location => ['admin', @project] }
@@ -61,6 +62,7 @@ class Admin::ProjectsController < AdminController
 
     respond_to do |format|
       if @project.update_attributes(params[:project])
+        expire_page "/projects"
         flash[:notice] = 'Project was successfully updated.'
         format.html { redirect_to(['admin', @project]) }
         format.xml  { head :ok }

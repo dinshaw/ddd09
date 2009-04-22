@@ -9,5 +9,4 @@ class PublicController < ApplicationController
     @no_term_links = true
     @employers = Employer.all
   end
-  
 end

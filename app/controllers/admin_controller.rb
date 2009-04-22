@@ -3,6 +3,7 @@ class AdminController < ApplicationController
   layout 'admin'
 
   def index
+    redirect_to admin_cms_pages_path
   end
 
   def nav_items

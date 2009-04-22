@@ -1,3 +1,2 @@
-<h1>Featured Project</h1>
-
-	<%= render  :partial => "projects/project", :locals => { :project => @featured_project, :teaser => true } %>
+<h1>Featured Project: <%= @featured_project.featured_on.to_s(:featured_on) %></h1>
+<%= render  :partial => "projects/project", :locals => { :project => @featured_project, :teaser => true } %>
