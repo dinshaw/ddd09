@@ -5,6 +5,7 @@ config/database.yml
 config/deploy.rb
 *.swp
 public/system
+public/*.html
 public/stylesheets/*
 db/sphinx
 db/schema.rb
