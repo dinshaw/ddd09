@@ -5,8 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<title><%= page_title %></title>
-	<%= javascript_include_tag 'jquery', 'jquery.autocomplete', 'application' %>
-	<%= stylesheet_link_tag 'reset', 'layout', 'typography', 'content', 'nav', 'tables', 'forms', 'autocomplete' %>
+	<%= javascript_include_tag 'jquery', 'application' %>
+	<%= stylesheet_link_tag 'reset', 'layout', 'typography', 'content', 'nav', 'tables', 'forms' %>
 </head>
 
 <body id="ddd">
@@ -56,7 +56,7 @@
 
 	</div> <!-- wrapper -->
 	<div id="footer">
-		<p>all content &copy; copyright <%= Date.today.year %> dinshaw design &amp; development. all rights reserved. <%= link_to "CSS 2.1", "http://jigsaw.w3.org/css-validator/validator?uri=http://dinshawdesign.com#{request.path}&profile=css21&usermedium=all&warning=1&lang=en", :class => :external %> | <%= link_to "XHTML 1.0 Strict", "http://validator.w3.org/check?uri=http://dinshawdesign.com#{request.path}&charset=(detect+automatically)&doctype=Inline&group=0", :class => :external %> | <%= link_to "Login", login_path %></p>
+		<p>all content &copy; copyright <%= Date.today.year %> dinshaw design &amp; development. all rights reserved. <%= link_to "CSS 2.1", "http://jigsaw.w3.org/css-validator/validator?uri=http://dinshawdesign.com#{request.path}&profile=css21&usermedium=all&warning=1&lang=en", :class => :external %> | <%= link_to "XHTML 1.1", "http://validator.w3.org/check?uri=http://dinshawdesign.com#{request.path}&charset=(detect+automatically)&doctype=Inline&group=0", :class => :external %> | <%= link_to "Login", login_path %></p>
 	</div> <!-- footer -->
 	<script type="text/javascript">
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
