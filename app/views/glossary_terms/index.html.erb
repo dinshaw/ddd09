@@ -1,6 +1,7 @@
 <div class="content-section">
 	<ul class="glossary-terms" id="glossary-left"> 
 	<% 
+	# move me to model
 	@glossary_terms.each_with_index do |term,i|
 		content = link_to(term.term, "#glossary_term_#{term.id}")
 		content = term.common? ? ["<span>*</span> ",content].join : content
