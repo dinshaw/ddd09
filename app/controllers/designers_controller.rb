@@ -1,5 +1,5 @@
 class DesignersController < ApplicationController
-  htpasswd :user=>"ddd", :pass=>"09de$igner3" if ENV['RAILS_ENV'] != 'development'
+  htpasswd :user=>"ddd", :pass=>"dddeigner3" if ENV['RAILS_ENV'] != 'development'
   
   caches_action :index
   
