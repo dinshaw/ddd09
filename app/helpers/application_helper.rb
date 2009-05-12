@@ -1,28 +1,23 @@
 require 'enumerator'
 module ApplicationHelper
-  # custom error message style
-  # def error_messages_for(*params)
-  #   options = params.extract_options!.symbolize_keys
-  #   if object = options.delete(:object)
-  #     objects = [object].flatten
-  #   else
-  #     objects = params.collect {|object_name| instance_variable_get("@#{object_name}") }.compact
-  #   end
-  #   count   = objects.inject(0) {|sum, object| sum + object.errors.count }
-  #   unless count.zero?
-  #     html = {:class => :errors}
-  #     error_messages = objects.sum {|object| object.errors.full_messages.enum_for(:each_with_index).map {|msg,i| content_tag(:li, "Error: #{msg}") } }.join\
-  #     contents = ''
-  #     contents << content_tag(:ul, error_messages)
-  # 
-  #     content_tag(:div, contents, html)
-  #   else
-  #     ''
-  #   end
-  # end
 
   def page_title
     [h(SITE_NAME),"|",@cms_page.title].join(" ")
+  end
+  
+  # output meta description or resuce with nil if no page is set
+  def meta_description
+    @cms_page.meta_description.blank? ? "Web application development in New York" : @cms_page.meta_description
+  end
+ 
+  # output meta keywords tag or resuce with nil if no page is set
+  def meta_keywords
+    @cms_page.meta_keyword.blank? ? "New York (NY) Web Development, Custom ecommerce development, Web Application Development" : @cms_page.meta_keyword
+  end
+  
+  # write the tag for both meta_description and meta_keywords
+  def meta(name, content)
+    %(<meta name="#{name}" content="#{content}" />)
   end
 
   def flash_block
